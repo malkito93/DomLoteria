@@ -15,18 +15,40 @@
         <nav>
             <ul>
                 <li>
-                    <i class="fas fa-house-user"></i>Home
+                    <!-- <i class="fas fa-house-user"> -->
+                    <a href="#">Inicio</a> 
+                </li>
+                <li id="loterias_menu" onclick="show_menu()">
+                   <a href="#">Loterias</a>
                 </li>
                 <li>
-                    About Us
+                   <a href="#">Sobre Nosotros</a> 
                 </li>
-                <li>
-                    Results
+                <li class="descargar_app" >
+                    <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
                 </li>
             </ul>
         </nav>
     </header>
-    
+<div class="container">
+    <div id="Submenu" class="submenu">
+        <ul>
+            <li><a href="#">Nacional</a> </li>
+            <li><a href="#">Leidsa</a> </li>
+            <li><a href="#">Real</a> </li>
+            <li><a href="#">Loteka</a> </li>
+            <li><a href="#">Primera</a> </li>
+        </ul>
+    </div>
+    <div class="body_container">
+        <div class="resultados">
+            <h1>Resultados del día de hoy</h1>
+            <h3>(República Dominicana)</h3>
+        </div>
+    </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="funciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </body>
 </html>
