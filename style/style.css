@@ -60,10 +60,17 @@ header ul .descargar_app a
     font-size: 17px;
     color: black;
 }
+.container
+{
+    padding-inline: 50px;
+}
 .body_container 
 {
     position: relative;
-padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    
 }
 body .submenu
 {
@@ -100,3 +107,113 @@ body .submenu ul li a{
     color: white;
     
 }
+
+/* TARGETAS */
+.container .cards_case
+{
+    display: flex;
+}
+.container .cards
+{
+    width: 235px;
+    background: white;
+    border-radius: 15px;
+    padding-bottom: 1px;
+    margin-inline: 15px;
+
+}
+.cards .card_tittle
+{
+    background: #0069BF;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+.cards .card_tittle h3
+{
+    margin: auto;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.cards .loteri_img
+{
+    height: 40px;
+
+    margin: auto;
+    display: flex;
+    padding: 20px;
+}
+.cards .loteri_img img
+{
+    margin: auto;
+
+}
+.card_results .tittle_results h4
+{
+    font-size: 14px;
+    font-weight: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.card_results .tittle_results .cards_dates
+{
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    margin: 5px;
+}
+.card_results .bowling_results
+{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card_results .bowling_results span
+{
+    width: 20px;
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+.card_results .bowling_results .bowling_case
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto;
+    border-bottom: solid 1px gray;
+    padding-bottom: 5px;
+}
+.cards .more_information
+{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 25px;
+   
+}
+.cards .more_information h4
+{
+    background: #0069BF;
+    width: 145px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+.cards .more_information h4 a
+{
+    text-decoration: none;
+    color: white;
+}
+

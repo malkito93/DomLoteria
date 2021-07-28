@@ -18,8 +18,8 @@
                     <!-- <i class="fas fa-house-user"> -->
                     <a href="#">Inicio</a> 
                 </li>
-                <li id="loterias_menu" onclick="show_menu()">
-                   <a href="#">Loterias</a>
+                <li id="loterias_menu" >
+                   <a href="#" onmouseover ="show_menu()">Loterias</a>
                 </li>
                 <li>
                    <a href="#">Sobre Nosotros</a> 
@@ -46,7 +46,72 @@
             <h3>(República Dominicana)</h3>
         </div>
     </div>
+    <div class="cards_case">
+        <!-- card Leidsa -->
+        <div class="cards">
+            <div class="card_tittle">
+                <h3>Leidsa</h3>
+            </div>
+            <div class="loteri_img">
+                <img src="img/leidsa.png" width="55px" alt="">
+            </div>
+            <div class="card_results">
+                <div class="tittle_results">
+                    <h4>Últimos Resultados</h4>
+                    <p class="cards_dates" id="cards_dates"></p>
+                </div>
+                <div class="bowling_results">
+                    <div class="bowling_case">
+                        <span> 01 </span>
+                        <span> 01 </span>
+                        <span> 01 </span>
+                    </div>
+                </div>
+                <div class="tittle_results">
+                    <h4>Proximo Sorteo</h4>
+                    <p class="cards_tomrowdates cards_dates" id="cards_tomrow_leidsa"></p>
+                </div>
+            </div>
+            <div class="more_information">
+                <h4><a href="#">VER MAS</a> </h4>
+            </div>
+        </div>
+        <!-- card Nacional -->
+        <div class="cards">
+            <div class="card_tittle">
+                <h3>Nacional</h3>
+            </div>
+            <div class="loteri_img">
+                <img src="img/nacional.png" width="95px" alt="">
+            </div>
+            <div class="card_results">
+                <div class="tittle_results">
+                    <h4>Últimos Resultados</h4>
+                    <p class="cards_dates" id="cards_dates_nacional"></p>
+                </div>
+                <div class="bowling_results">
+                    <div class="bowling_case">
+                        <span id="bolo1_nacional"> 01 </span>
+                        <span id="bolo2_nacional"> 01 </span>
+                        <span id="bolo3_nacional"> 01 </span>
+                    </div>
+                </div>
+                <div class="tittle_results">
+                    <h4>Proximo Sorteo</h4>
+                    <p class="cards_tomrowdates cards_dates" id="cards_tomrow_nacional"></p>
+                </div>
+            </div>
+            <div class="more_information">
+                <h4><a href="#">VER MAS</a> </h4>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+
+    </div>
+    
 </div>
+<script src="datosapi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="funciones.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
