@@ -8,7 +8,7 @@ fetch (Api_Url)
 .then(res => res.json())
 .then(data => {
     data.forEach(resultado => {
-        console.log(resultado.userId)
+        // console.log(resultado.userId)
         var bolos = resultado.userId 
         bolo1_Nacional.textContent = bolos -8;
         bolo2_Nacional.textContent = bolos;
