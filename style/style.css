@@ -5,6 +5,10 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #E5ECF3;
 }
+p
+{
+    margin: 0;
+}
 h1
 {
     margin:0;
@@ -108,11 +112,13 @@ body .submenu ul li a{
     
 }
 
-/* TARGETAS */
-.container .cards_case
+/* CONTENEDOR TARGETAS */
+.container_cards_sidebar
 {
     display: flex;
 }
+
+/* TARGETAS */
 .container .cards
 {
     width: 235px;
@@ -120,7 +126,16 @@ body .submenu ul li a{
     border-radius: 15px;
     padding-bottom: 1px;
     margin-inline: 15px;
-
+    height: 355px;
+    border: solid 1px gray;
+    margin-bottom: 25px;
+    
+}
+.container .cards_case
+{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
 }
 .cards .card_tittle
 {
@@ -140,15 +155,16 @@ body .submenu ul li a{
 }
 .cards .loteri_img
 {
-    height: 40px;
-
+    height: 50px;
     margin: auto;
     display: flex;
-    padding: 20px;
+    padding: 10px 40px;
+    overflow: hidden;
 }
 .cards .loteri_img img
 {
     margin: auto;
+    width: 85%;
 
 }
 .card_results .tittle_results h4
@@ -217,3 +233,79 @@ body .submenu ul li a{
     color: white;
 }
 
+/* SIDEBAR */
+.sidebar
+{
+    width: 30%;
+}
+.sidebar .results_table_name
+{
+    background: #3E6485;
+    border-radius: 15px 15px 0 0;
+    width: 270px;
+    height: 36px;
+    color: white;
+    text-align: center;
+    padding: 5px;  
+    display: flex;
+    border-bottom: 3px solid #FFD500;
+}
+.sidebar .results_table_name h3
+{
+    font-weight: 400;
+    font-size: 16px;
+    margin: auto;
+}
+.sidebar .results_table
+{
+    background: white;
+    width: 270px;
+    height: 75vh;
+    padding: 0 5px;
+}
+.sidebar .results_table .qunielas_results
+{
+    height: 35px;
+    display: flex;
+    border-bottom: 1px solid #3E6485;
+    padding: 5px;
+    margin-top: 1px;
+}
+.sidebar .results_table .qunielas_results .quiniela_name
+{
+    width: 50%;
+    border-right: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.qunielas_results .quiniela_name p
+{
+    margin: auto 5px;
+    font-weight: 600;
+    color: #1E3548;
+}
+.qunielas_results .quiniela_bowling
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.qunielas_results .quiniela_bowling span
+{
+    width: 20px;
+    /* border: solid 1px gray; */
+    border-radius: 50px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+    background: #909090;
+    color: white;
+}
+
+.qunielas_results .quiniela_bowling .active_bowling
+{
+    background: #0C8337;
+}
