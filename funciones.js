@@ -1,32 +1,27 @@
 var menuopen = document.getElementById('loterias_menu');
 var submenu = document.getElementById('Submenu');
-var fechaActual = document.getElementById('cards_dates')
+var fechaActual = document.querySelectorAll('#cards_date')
 var fechaActualNacional = document.getElementById('cards_dates_nacional')
 
+// console.log(fechaActual)
+// FECHAS CARDS
 
-//ESTO ES UNA PRUEBA
-
-/* 
-
- */
-
-//HASTA AQUI ES PRUEBA 
-
-var fechaMananaLeidsa = document.getElementById('cards_tomrow_leidsa') 
-var fechaMananaNacional = document.getElementById('cards_tomrow_nacional')
+var fechaManana = document.querySelectorAll('#cards_tomrow') 
+console.log(fechaManana)
 
 
-// Menu plegable (Submenu)
+// SUBMENU DESPLEGABLE
 function show_menu(){
     submenu.classList.toggle('show')
+    submenu.style.top= '84px'
 }
+submenu.addEventListener('click', e =>{
+    if (e.target === submenu);
+})
 
-function cerrar(){
-    submenu.removeClass('show')
-};
 
 
-//OPERACION FECHA DE HOY 
+//FECHA DE HOY 
 let hoy = new Date()
 const meses = ['enero', 'Febrero','Marzo', 'Abril', 'Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre', 'Disciembre']
 
@@ -39,15 +34,21 @@ if (hora > 23){
     bolo1_Nacional.style.color ="gray"
 }
 let pmes = meses[mes]
+
 //AA-MM-DD
 let formato1 = `${dia} de ${pmes} (${anio})`
 let diaDeManana = `${dia + 1} de ${pmes} (${anio})`
 
-// FECHA DE HOY CARDS
-fechaActual.textContent = formato1;
-fechaActualNacional.textContent = formato1;
+console.log(diaDeManana)
+// AGREGAR FECHA DE HOY CARDS
 
-// FECHA DE MANANA CARDS
-fechaMananaLeidsa.textContent = diaDeManana;
-fechaMananaNacional.textContent = diaDeManana;
+for(var i=0; i<fechaActual.length; i++){
+    fechaActual[i].textContent = formato1;
+ }
+
+//AGREGAR FECHA DE MANANA (CARDS)
+ 
+  for(var i=0; i<fechaManana.length; i++){
+     fechaManana[i].textContent = diaDeManana;
+  }
 

@@ -10,6 +10,10 @@
 </head>
 <body>
     <header>
+        <div
+         class="descargar_app descargar_app_izq" >
+            <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
+        </div>
         <div class="logo">
             <img src="img/logo.png" width="90px" alt="">
         </div>
@@ -20,34 +24,39 @@
                     <a href="#">Inicio</a> 
                 </li>
                 <li id="loterias_menu" >
-                   <a href="#" onmouseover ="show_menu()">Loterias</a>
+                   <a href="#" onclick ="show_menu()">Loterias</a>
                 </li>
                 <li>
                    <a href="#">Sobre Nosotros</a> 
                 </li>
-                <li class="descargar_app" >
-                    <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
-                </li>
             </ul>
         </nav>
+        <div
+         class="descargar_app descargar_app_der" >
+            <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
+        </div>
+        <div class="burguer_menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
-<div class="container" onclick="cerrar()">
+<div class="container">
     <div id="Submenu" class="submenu">
         <ul>
-            <li><a href="#" target="_blank">Nacional</a> </li>
+            <li><a href="#" >Nacional</a> </li>
             <li><a href="#">Leidsa</a> </li>
             <li><a href="#">Real</a> </li>
             <li><a href="#">Loteka</a> </li>
             <li><a href="#">Primera</a> </li>
         </ul>
     </div>
-    <div class="body_container">
-        <div class="resultados">
-            <h1>Resultados del día de hoy</h1>
-            <h3>(República Dominicana)</h3>
-        </div>
-    </div>
     <div class="container_cards_sidebar">
+        <div class="body_tittle">
+            <div class="resultados">
+                <h1>Resultados del día de hoy</h1>
+                <h3>(República Dominicana)</h3>
+            </div>
+        </div>
+        <!-- TARJETAS DE RESULTADOS -->
         <div class="cards_case">
             <!-- QUINIELA PALE -->
             <div class="cards">
@@ -57,24 +66,24 @@
                 <div class="loteri_img">
                     <img src="img/quiniela pale.png" width="75px" alt="quiniela pale">
                 </div>
-                <div class="card_results">
+                <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_dates"></p>
+                        <p class="cards_dates" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
-                        <div class="bowling_case">
-                            <span> 01 </span>
-                            <span> 01 </span>
-                            <span> 01 </span>
+                        <div class="bowling_case quiniela_pale">
+                            <span class="active_bowling quiniela_pale1" > 00 </span>
+                            <span class="active_bowling quiniela_pale2" > 00 </span>
+                            <span class="active_bowling quiniela_pale3" > 00 </span>
                         </div>
                     </div>
                     <div class="tittle_results">
                         <h4>Proximo Sorteo</h4>
-                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow_leidsa"></p>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow">00</p>
                     </div>
                 </div>
-                <div class="more_information">
+                <div class="more_info">
                     <h4><a href="#">VER MAS</a> </h4>
                 </div>
             </div>
@@ -86,24 +95,24 @@
                 <div class="loteri_img">
                     <img src="img/anguillaloterry.png" alt="aguilla mañana">
                 </div>
-                <div class="card_results">
+                <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_dates_nacional"></p>
+                        <p class="cards_dates" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
-                        <div class="bowling_case">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>
+                        <div class="bowling_case anguilla_manana">
+                            <span id="bolo1_nacional" class="anguilla_mañana1"> 00 </span>
+                            <span id="bolo2_nacional" class="anguilla_mañana2"> 00 </span>
+                            <span id="bolo3_nacional" class="anguilla_mañana3"> 00 </span>
                         </div>
                     </div>
                     <div class="tittle_results">
                         <h4>Proximo Sorteo</h4>
-                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow_nacional"></p>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
                     </div>
                 </div>
-                <div class="more_information">
+                <div class="more_info">
                     <h4><a href="#">VER MAS</a> </h4>
                 </div>
             </div>
@@ -115,118 +124,592 @@
                 <div class="loteri_img">
                     <img src="img/la primera.png" alt="la primera">
                 </div>
-                <div class="card_results">
+                <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_dates_nacional"></p>
+                        <p class="cards_dates" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>
+                            <span class="la_primera1"> 00 </span>
+                            <span class="la_primera2"> 00 </span>
+                            <span class="la_primera3"> 00 </span>
                         </div>
                     </div>
                     <div class="tittle_results">
                         <h4>Proximo Sorteo</h4>
-                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow_nacional"></p>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
                     </div>
                 </div>
-                <div class="more_information">          
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- LA SUERTE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/la suerte.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="la_suerte1 active_bowling"> 00 </span>
+                            <span class="la_suerte2 active_bowling"> 00 </span>
+                            <span class="la_suerte3 active_bowling"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- ANGUILLA DIA-->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/anguillaloterry.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="anguilla_dia1"> 00 </span>
+                            <span class="anguilla_dia2"> 00 </span>
+                            <span class="anguilla_dia3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- QUINIELA REAL -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/loteria real.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="quiniela_real1"> 00 </span>
+                            <span class="quiniela_real2"> 00 </span>
+                            <span class="quiniela_real3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- FLORIA DIA -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/floriea lottery.jpg" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="florida_dia1"> 00 </span>
+                            <span class="florida_dia1"> 00 </span>
+                            <span class="florida_dia1"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- NEW YORK DIA -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/new york.jpg" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="new_york_dia1"> 00 </span>
+                            <span class="new_york_dia2"> 00 </span>
+                            <span class="new_york_dia3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- NACIONAL TARDE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/nacional.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="nacional_tarde1"> 00 </span>
+                            <span class="nacional_tarde2"> 00 </span>
+                            <span class="nacional_tarde3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- LOTEDOM -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/quinielalotedom.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="lotedom1"> 00 </span>
+                            <span class="lotedom2"> 00 </span>
+                            <span class="lotedom3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- ANGUILLA TARDE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/anguillaloterry.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="anguilla_tarde1"> 00 </span>
+                            <span class="anguilla_tarde2"> 00 </span>
+                            <span class="anguilla_tarde3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- NACIONAL NOCHE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/nacional.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="nacional_noche1"> 00 </span>
+                            <span class="nacional_noche1"> 00 </span>
+                            <span class="nacional_noche1"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- QUINIELA LOTEKA -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/loteka.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="loteka1"> 00 </span>
+                            <span class="loteka2"> 00 </span>
+                            <span class="loteka3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- ANGUILLA NOCHE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/anguillaloterry.png" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="anguilla_noche1"> 00 </span>
+                            <span class="anguilla_noche2"> 00 </span>
+                            <span class="anguilla_noche3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- FLORIDA NOCHE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/floriea lottery.jpg" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="florida_noche1"> 00 </span>
+                            <span class="florida_noche2"> 00 </span>
+                            <span class="florida_noche3"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
+                    <h4><a href="#">VER MAS</a> </h4>
+                </div>
+            </div>
+            <!-- NEW YORK NOCHE -->
+            <div class="cards">
+                <div class="card_tittle">
+                    <h3>Nacional</h3>
+                </div>
+                <div class="loteri_img">
+                    <img src="img/new york.jpg" alt="la primera">
+                </div>
+                <div class="card_info">
+                    <div class="tittle_results">
+                        <h4>Últimos Resultados</h4>
+                        <p class="cards_dates" id="cards_date"></p>
+                    </div>
+                    <div class="bowling_results">
+                        <div class="bowling_case">
+                            <span class="new_york_noche1"> 00 </span>
+                            <span class="new_york_noche1"> 00 </span>
+                            <span class="new_york_noche1"> 00 </span>
+                        </div>
+                    </div>
+                    <div class="tittle_results">
+                        <h4>Proximo Sorteo</h4>
+                        <p class="cards_tomrowdates cards_dates" id="cards_tomrow"></p>
+                    </div>
+                </div>
+                <div class="more_info">          
                     <h4><a href="#">VER MAS</a> </h4>
                 </div>
             </div>
         </div>
 
-        <!-- RESUMEN DE RESULTADOS -->
+        <!-- TABLA DE RESULTADOS-->
         <div class="sidebar">
             <div class="results_table_name">
                 <h3>Resultados</h3>                       
             </div>
             <div class="results_table">
+                <!-- QUINIELA PALE -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>Quiniela Pale</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span id="bolo1_quiniela_pale1" > 00 </span>
+                            <span id="bolo2_quiniela_pale2" > 00 </span>
+                            <span id="bolo3_quiniela_pale3" > 00 </span>                       
                     </div>
                 </div>
+                <!-- ANGUILLA MAÑANA -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>Angilla Mañ.</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span id="bolo1_nacional" class="anguilla_mañana1"> 00 </span>
+                            <span id="bolo2_nacional" class="anguilla_mañana2"> 00 </span>
+                            <span id="bolo3_nacional" class="anguilla_mañana3"> 00 </span>                       
                     </div>
                 </div>
+                <!-- LA PRIMERA -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>La Primera</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span class="active_bowling" id="bolo1_nacional"> 01 </span>
-                            <span class="active_bowling" id="bolo2_nacional"> 01 </span>
-                            <span class="active_bowling" id="bolo3_nacional"> 01 </span>                       
+                            <span class="la_primera1 active_bowling "> 00 </span>
+                            <span class="la_primera2 active_bowling "> 00 </span>
+                            <span class="la_primera3 active_bowling "> 00 </span>                       
                     </div>
                 </div>
+                <!-- LA SUERTE -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
                         <p>Gana Mas</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span class="active_bowling" id="bolo1_nacional"> 01 </span>
-                            <span class="active_bowling" id="bolo2_nacional"> 01 </span>
-                            <span class="active_bowling" id="bolo3_nacional"> 01 </span>                       
+                            <span class="la_suerte1 active_bowling"> 00 </span>
+                            <span class="la_suerte2 active_bowling"> 00 </span>
+                            <span class="la_suerte3 active_bowling"> 00 </span>                       
                     </div>
                 </div>
+                <!-- ANGUILLA DIA-->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>Anguilla Día</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span class="anguilla_dia1"> 00 </span>
+                            <span class="anguilla_dia2"> 00 </span>
+                            <span class="anguilla_dia3"> 00 </span>                       
                     </div>
                 </div>
+                <!-- QUINIELA REAL -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>Quiniela Real</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span class="quiniela_real1"> 00 </span>
+                            <span class="quiniela_real2"> 00 </span>
+                            <span class="quiniela_real3"> 00 </span>                       
                     </div>
                 </div>
+                <!-- FLORIA DIA -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>Florida Día</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span class="florida_dia1"> 00 </span>
+                            <span class="florida_dia2"> 00 </span>
+                            <span class="florida_dia3"> 00 </span>                       
                     </div>
                 </div>
+                <!-- NEW YORK DIA -->
                 <div class="qunielas_results">
                     <div class="quiniela_name">
-                        <p>Gana Mas</p>
+                        <p>New York Día</p>
                     </div>
                     <div class="quiniela_bowling">
-                            <span id="bolo1_nacional"> 01 </span>
-                            <span id="bolo2_nacional"> 01 </span>
-                            <span id="bolo3_nacional"> 01 </span>                       
+                            <span class="new_york_dia1"> 00 </span>
+                            <span class="new_york_dia2"> 00 </span>
+                            <span class="new_york_dia3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- NACIONAL TARDE -->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Nacional Tar.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="nacional_tarde1"> 00 </span>
+                            <span class="nacional_tarde2"> 00 </span>
+                            <span class="nacional_tarde3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- LOTEDOM -->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Nacional Tar.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="lotedom1"> 00 </span>
+                            <span class="lotedom2"> 00 </span>
+                            <span class="lotedom3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- ANGUILLA TARDE-->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Anguilla tar.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="anguilla_tarde1"> 00 </span>
+                            <span class="anguilla_tarde2"> 00 </span>
+                            <span class="anguilla_tarde3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- NACIONAL NOCHE -->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Nacional noc.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="nacional_noche1"> 00 </span>
+                            <span class="nacional_noche2"> 00 </span>
+                            <span class="nacional_noche3"> 00 </span>                       
+                    </div>
+                </div>
+                 <!-- QUINIELA LOTEKA -->
+                 <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Loteka.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="loteka1"> 00 </span>
+                            <span class="loteka2"> 00 </span>
+                            <span class="loteka3"> 00 </span>                       
+                    </div>
+                </div>
+                 <!-- ANGUILLA NOCHE-->
+                 <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Anguilla Noc.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="anguilla_noche1"> 00 </span>
+                            <span class="anguilla_noche2"> 00 </span>
+                            <span class="anguilla_noche3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- FLORIA NOCHE -->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>Florida Noc.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="florida_noche1"> 00 </span>
+                            <span class="florida_noche2"> 00 </span>
+                            <span class="florida_noche3"> 00 </span>                       
+                    </div>
+                </div>
+                <!-- NEW YORK NOCHE -->
+                <div class="qunielas_results">
+                    <div class="quiniela_name">
+                        <p>New York Noc.</p>
+                    </div>
+                    <div class="quiniela_bowling">
+                            <span class="new_york_noche1"> 00 </span>
+                            <span class="new_york_noche2"> 00 </span>
+                            <span class="new_york_noche3"> 00 </span>                       
                     </div>
                 </div>
             
             </div>
         </div>
+
     </div>
     
 </div>

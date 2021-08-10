@@ -27,12 +27,23 @@ header{
     padding-right: 45px;
     border-bottom: 3px solid #FFD500;
     align-items: center;
+    z-index: 200;
+}
+.descargar_app_izq 
+{
+    display: none;
 }
 header nav 
 {
     height: 100%;
 
 }
+header .burguer_menu
+ {
+     display: none;
+     color: white;
+ 
+ }
 header ul 
 {
     display: flex;
@@ -50,7 +61,7 @@ header ul li a
     color: white;
     text-decoration: none;
  }
-header ul .descargar_app
+header .descargar_app
 {
     font-size: 20px;
     font-weight: 600;
@@ -59,7 +70,7 @@ header ul .descargar_app
     padding: 5px;
     border-radius: 50px;
 }
-header ul .descargar_app a
+header .descargar_app a
 {
     font-size: 17px;
     color: black;
@@ -68,12 +79,15 @@ header ul .descargar_app a
 {
     padding-inline: 50px;
 }
-.body_container 
+.body_tittle 
 {
-    position: relative;
+    position: absolute;
+    top: -95px;
     padding-top: 15px;
     padding-bottom: 25px;
     display: flex;
+    margin-left: 15px;
+
     
 }
 body .submenu
@@ -83,8 +97,9 @@ body .submenu
  background: #3E6485;
  position: absolute;
  right: 244px;
- z-index: 500;
- 
+ z-index: 100;
+ top: -155px;
+ transition: 1s;
 }
 body .show
 {
@@ -103,6 +118,12 @@ body .submenu ul li
 {
     margin-bottom: 3px;
     border-bottom: solid 1px #6e94b3;
+    transition: 0.2s;
+}
+body .submenu ul li:hover
+{
+    color: black;
+    background: rgb(246, 243, 48);
 }
 body .submenu ul li a{
     margin: 8px;
@@ -115,7 +136,11 @@ body .submenu ul li a{
 /* CONTENEDOR TARGETAS */
 .container_cards_sidebar
 {
+    position: relative;
     display: flex;
+    margin: 0 auto;
+    max-width: 1360px;
+    margin-top: 90px;
 }
 
 /* TARGETAS */
@@ -134,14 +159,14 @@ body .submenu ul li a{
 .container .cards_case
 {
     display: flex;
-    width: 70%;
+    /* width: 70%; */
     flex-wrap: wrap;
 }
 .cards .card_tittle
 {
     background: #0069BF;
     height: 40px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 14px 14px 0 0;
     color: white;
     padding: 10px;
     display: flex;
@@ -155,7 +180,7 @@ body .submenu ul li a{
 }
 .cards .loteri_img
 {
-    height: 50px;
+    height: 70px;
     margin: auto;
     display: flex;
     padding: 10px 40px;
@@ -167,7 +192,7 @@ body .submenu ul li a{
     width: 85%;
 
 }
-.card_results .tittle_results h4
+.card_info .tittle_results h4
 {
     font-size: 14px;
     font-weight: 200px;
@@ -175,14 +200,14 @@ body .submenu ul li a{
     display: flex;
     justify-content: center;
 }
-.card_results .tittle_results .cards_dates
+.card_info .tittle_results .cards_dates
 {
     text-align: center;
     color: gray;
     font-size: 12px;
     margin: 5px;
 }
-.card_results .bowling_results
+.card_info .bowling_results
 {
     width: 100%;
     height: 48px;
@@ -190,16 +215,22 @@ body .submenu ul li a{
     align-items: center;
     margin-bottom: 15px;
 }
-.card_results .bowling_results span
+.card_info .bowling_results span
 {
     width: 20px;
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     border-radius: 50px;
     padding: 5px;
     margin: 3px;
     text-align: center;
+    background: #909090;
+    color: white;
 }
-.card_results .bowling_results .bowling_case
+.card_info .bowling_results .active_bowling
+{
+    background: #0C8337;
+}
+.card_info .bowling_results .bowling_case
 {
     display: flex;
     align-items: center;
@@ -209,14 +240,14 @@ body .submenu ul li a{
     border-bottom: solid 1px gray;
     padding-bottom: 5px;
 }
-.cards .more_information
+.cards .more_info
 {
     text-align: center;
     padding: 3px;
     margin-bottom: 25px;
    
 }
-.cards .more_information h4
+.cards .more_info h4
 {
     background: #0069BF;
     width: 145px;
@@ -227,7 +258,7 @@ body .submenu ul li a{
     font-size: 14px;
     
 }
-.cards .more_information h4 a
+.cards .more_info h4 a
 {
     text-decoration: none;
     color: white;
@@ -236,13 +267,13 @@ body .submenu ul li a{
 /* SIDEBAR */
 .sidebar
 {
-    width: 30%;
+    /* width: 30%; */
 }
 .sidebar .results_table_name
 {
     background: #3E6485;
     border-radius: 15px 15px 0 0;
-    width: 270px;
+    width: 250px;;
     height: 36px;
     color: white;
     text-align: center;
@@ -259,9 +290,11 @@ body .submenu ul li a{
 .sidebar .results_table
 {
     background: white;
-    width: 270px;
-    height: 75vh;
+    /* width: 234px; */
+    /* height: 75vh; */
     padding: 0 5px;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 25px;
 }
 .sidebar .results_table .qunielas_results
 {
@@ -308,4 +341,66 @@ body .submenu ul li a{
 .qunielas_results .quiniela_bowling .active_bowling
 {
     background: #0C8337;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 730px)  {
+    .descargar_app_izq 
+    {
+    display: block;
+    }
+    header .descargar_app_der
+{
+    display: none;
+}
+    header .burguer_menu
+    {
+     display: block;
+     color: white;
+     font-size: 28px;
+ 
+    }
+    header ul 
+    {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        padding: 12px;
+        margin-bottom: 5px;
+        right: 0px;
+        top: 68px;
+        background: #3E6485;
+        z-index: 400;
+        height: 150px;
+    }
+    header ul li 
+    {
+        /* padding: 10px; */
+        width: 100%;
+        margin-bottom: 3px;
+        border-bottom: solid 1px #6e94b3;
+        transition: 0.2s;
+    }
+    header ul li a
+    {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .submenu
+    {
+    display: none;
+    width: 260px;
+    background: #3E6485;
+    position: absolute;
+    right: 244px;
+    z-index: 100;
+    top: 68px;
+    right: 200px;
+    transition: 1s;
+    }
 }
