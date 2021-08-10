@@ -343,6 +343,29 @@ body .submenu ul li a{
     background: #0C8337;
 }
 
+body footer
+{
+    color: white;
+    height: 200px;
+    padding: 0 45px;
+    background: #3E6485;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+body footer .footer_info
+{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+
+}
+ body footer .social_media
+{
+    margin-top: 10px;
+} 
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 730px)  {
