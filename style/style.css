@@ -29,6 +29,10 @@ header{
     align-items: center;
     z-index: 200;
 }
+header .menu_and_link
+{
+    display: flex;
+}
 .descargar_app_izq 
 {
     display: none;
@@ -52,7 +56,7 @@ header ul
 }
 header ul li
 {
-    padding-top: 6px;
+    /* padding-top: 6px; */
     margin-right: 45px;
 
 }
@@ -67,11 +71,14 @@ header .descargar_app
     font-weight: 600;
     background: #FFD500;
     border: solid 2px white;
-    padding: 5px;
+    padding: 0 15px;
     border-radius: 50px;
+    /* height: 35px; */
+    padding: 10px;
 }
 header .descargar_app a
 {
+    text-decoration: none;
     font-size: 17px;
     color: black;
 }
@@ -140,7 +147,7 @@ body .submenu ul li a{
     display: flex;
     margin: 0 auto;
     max-width: 1360px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 /* TARGETAS */
