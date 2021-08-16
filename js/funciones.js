@@ -7,7 +7,7 @@ var fechaActualNacional = document.getElementById('cards_dates_nacional')
 // FECHAS CARDS
 
 var fechaManana = document.querySelectorAll('#cards_tomrow') 
-console.log(fechaManana)
+// console.log(fechaManana)
 
 
 // SUBMENU DESPLEGABLE
@@ -39,7 +39,7 @@ let pmes = meses[mes]
 let formato1 = `${dia} de ${pmes} (${anio})`
 let diaDeManana = `${dia + 1} de ${pmes} (${anio})`
 
-console.log(diaDeManana)
+// console.log(diaDeManana)
 // AGREGAR FECHA DE HOY CARDS
 
 for(var i=0; i<fechaActual.length; i++){

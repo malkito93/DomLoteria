@@ -163,6 +163,12 @@ body .submenu ul li a{
     margin-bottom: 25px;
     
 }
+.cards .game_name
+{
+    text-align: center; 
+    font-weight: 400;
+    padding-top: 8px;
+}
 .container .cards_case
 {
     display: flex;
@@ -244,7 +250,7 @@ body .submenu ul li a{
     align-content: center;
     justify-content: space-around;
     margin: auto;
-    border-bottom: solid 1px gray;
+    /* border-bottom: solid 1px gray; */
     padding-bottom: 5px;
 }
 .cards .more_info
@@ -272,10 +278,7 @@ body .submenu ul li a{
 }
 
 /* SIDEBAR */
-.sidebar
-{
-    /* width: 30%; */
-}
+
 .sidebar .results_table_name
 {
     background: #3E6485;
@@ -373,17 +376,18 @@ body footer .footer_info
     margin-top: 10px;
 } 
 
-/* RESPONSIVE */
+/* RESPONSIVE  TABLET*/
 
-@media screen and (max-width: 730px)  {
+@media screen and (max-width: 768px)  
+{
     .descargar_app_izq 
     {
     display: block;
     }
     header .descargar_app_der
-{
+    {
     display: none;
-}
+    }
     header .burguer_menu
     {
      display: block;
@@ -393,14 +397,14 @@ body footer .footer_info
     }
     header ul 
     {
-        display: flex;
+        display: none;
         list-style: none;
         flex-direction: column;
         position: fixed;
         padding: 12px;
         margin-bottom: 5px;
         right: 0px;
-        top: 68px;
+        top: 81px;
         background: #3E6485;
         z-index: 400;
         height: 150px;
@@ -432,5 +436,171 @@ body footer .footer_info
     top: 68px;
     right: 200px;
     transition: 1s;
+    }
+    body .container_cards_sidebar
+    {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    body .container_cards_sidebar .sidebar
+    {
+        order: 1;
+    }
+    /* .container .cards_case {
+        display: flex;
+        /* width: 70%; */
+        flex-wrap: wrap;
+        order: 2;
+    } */
+}
+
+@media screen and (max-width: 642px)  
+{
+    .descargar_app_izq 
+    {
+    display: block;
+    }
+    header .descargar_app_der
+    {
+    display: none;
+    }
+    header .burguer_menu
+    {
+     display: block;
+     color: white;
+     font-size: 28px;
+ 
+    }
+    header ul 
+    {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        padding: 12px;
+        margin-bottom: 5px;
+        right: 0px;
+        top: 81px;
+        background: #3E6485;
+        z-index: 400;
+        height: 150px;
+    }
+    header ul li 
+    {
+        /* padding: 10px; */
+        width: 100%;
+        margin-bottom: 3px;
+        border-bottom: solid 1px #6e94b3;
+        transition: 0.2s;
+    }
+    header ul li a
+    {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .submenu
+    {
+    display: none;
+    width: 260px;
+    background: #3E6485;
+    position: absolute;
+    right: 244px;
+    z-index: 100;
+    top: 68px;
+    right: 200px;
+    transition: 1s;
+    }
+    body .container_cards_sidebar
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    body .container_cards_sidebar .sidebar
+    {
+        order: 1;
+    }
+    .container .cards_case {
+        display: flex;
+        /* width: 70%; */
+        flex-wrap: wrap;
+        order: 2;
+    } 
+}
+
+/* RESPONSIVE  MOVIL*/
+@media screen and (max-width: 320px)  
+{   
+    body .container_cards_sidebar
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    body .container_cards_sidebar .sidebar
+    {
+        order: 1;
+    }
+    .descargar_app_izq 
+    {
+    display: block;
+    }
+    header .descargar_app_der
+    {
+    display: none;
+    }
+    header .burguer_menu
+    {
+     display: block;
+     color: white;
+     font-size: 28px;
+ 
+    }
+    header ul 
+    {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        padding: 12px;
+        margin-bottom: 5px;
+        right: 0px;
+        top: 81px;
+        background: #3E6485;
+        z-index: 400;
+        height: 150px;
+    }
+    header ul li 
+    {
+        /* padding: 10px; */
+        width: 100%;
+        margin-bottom: 3px;
+        border-bottom: solid 1px #6e94b3;
+        transition: 0.2s;
+    }
+    header ul li a
+    {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .submenu
+    {
+    display: none;
+    width: 260px;
+    background: #3E6485;
+    position: absolute;
+    right: 244px;
+    z-index: 100;
+    top: 68px;
+    right: 200px;
+    transition: 1s;
+    }
+    body footer 
+    {
+        display: none;
     }
 }
