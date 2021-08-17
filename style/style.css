@@ -37,6 +37,10 @@ header .menu_and_link
 {
     display: none;
 }
+.menu_responsive
+    {
+        display: none; 
+    }
 header nav 
 {
     height: 100%;
@@ -110,7 +114,9 @@ body .submenu
 }
 body .show
 {
-    display: block;   
+    display: block;
+    top: 96px;
+    right: 198px;  
 }
 body .submenu ul
 {
@@ -425,6 +431,33 @@ body footer .footer_info
         color: white;
     }
 
+    /* MENU RESPONSIBE */
+    .menu_responsive
+    {
+        display: none;
+        width: 200px;
+        background: #3E6485;
+        position: absolute;
+        z-index: 600;
+        right: 0;
+        top: 96px;
+    }
+    body .menu_responsive ul 
+    {
+        list-style: none;  
+    }
+    body .menu_responsive ul li
+    {
+        margin-top: 5px; 
+    }
+    body .menu_responsive ul a
+    {
+        text-decoration: none;
+        color: white;
+
+    
+    }
+    
     .submenu
     {
     display: none;
@@ -446,12 +479,6 @@ body footer .footer_info
     {
         order: 1;
     }
-    /* .container .cards_case {
-        display: flex;
-        /* width: 70%; */
-        flex-wrap: wrap;
-        order: 2;
-    } */
 }
 
 @media screen and (max-width: 642px)  
@@ -463,6 +490,18 @@ body footer .footer_info
     header .descargar_app_der
     {
     display: none;
+    }
+    header .descargar_app {
+        font-size: 12px;
+        font-weight: 600;
+        background: #FFD500;
+        border: solid 2px white;
+        padding: 0 15px;
+        border-radius: 50px;
+        height: 41px;
+        padding: 10px;
+        width: 85px;
+        text-align: center;
     }
     header .burguer_menu
     {
@@ -515,12 +554,46 @@ body footer .footer_info
     }
     body .container_cards_sidebar
     {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
     }
     body .container_cards_sidebar .sidebar
     {
-        order: 1;
+    order: 1;
+    padding-inline: 15px;
+    margin-bottom: 40px;
+    }
+    .container .cards 
+    {
+        width: 235px;
+        background: white;
+        border-radius: 15px;
+        padding-bottom: 1px;
+        margin-inline: auto;
+        height: 355px;
+        border: solid 1px gray;
+        margin-bottom: 25px;
+    }
+    body .container_cards_sidebar .sidebar .results_table_name
+    {
+        background: #3E6485;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 36px;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        border-bottom: 3px solid #FFD500;   
+    }
+    body .container_cards_sidebar .sidebar .results_table 
+    {
+        background: white;
+        width: 100%;
+        /* height: 75vh; */
+        padding: 0 5px;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 25px;
     }
     .container .cards_case {
         display: flex;
@@ -531,16 +604,48 @@ body footer .footer_info
 }
 
 /* RESPONSIVE  MOVIL*/
-@media screen and (max-width: 320px)  
+@media screen and (max-width: 400px)  
 {   
+    header {
+        background-color: #1E3548;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 3px solid #FFD500;
+        align-items: center;
+        z-index: 200;
+    }
+    header .descargar_app {
+        font-size: 12px;
+        font-weight: 600;
+        background: #FFD500;
+        border: solid 2px white;
+        padding: 0 15px;
+        border-radius: 50px;
+        height: 41px;
+        padding: 10px;
+        width: 76px;
+        text-align: center;
+    }
     body .container_cards_sidebar
     {
         display: flex;
         flex-direction: column;
     }
+    body .container_cards_sidebar .sidebar .results_table {
+        background: white;
+        width: 100%;
+        height: 58vh;
+        padding: 0 5px;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 25px;
+        overflow: scroll;
+    }
     body .container_cards_sidebar .sidebar
     {
         order: 1;
+        padding-inline: 0;
     }
     .descargar_app_izq 
     {
