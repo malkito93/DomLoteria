@@ -22,6 +22,7 @@ function show_menu(){
 // MENU RESPONSIVE DESPLEGABLE 
 var menuResponsive = document.getElementById('menu')
 console.log(menu)
+
 function openMenu(){
     menuResponsive.classList.toggle('show_menu')
 
