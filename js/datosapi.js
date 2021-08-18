@@ -409,6 +409,10 @@ fetch (url)
         nacionalTarde2[0].textContent = nt2
         nacionalTarde3[0].textContent = nt3
 
+        nacionalTarde1[1].textContent = nt1
+        nacionalTarde2[1].textContent = nt2
+        nacionalTarde3[1].textContent = nt3
+
         var qpHoy = data[0].Sorteos[0].Hoy;
 
         if( qpHoy === 'S'){
@@ -416,6 +420,10 @@ fetch (url)
             nacionalTarde1[0].className ='active_bowling'
             nacionalTarde2[0].className ='active_bowling'
             nacionalTarde3[0].className ='active_bowling'
+
+            nacionalTarde1[1].className ='active_bowling'
+            nacionalTarde2[1].className ='active_bowling'
+            nacionalTarde3[1].className ='active_bowling'
       
         }
          

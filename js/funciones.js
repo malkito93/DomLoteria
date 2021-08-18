@@ -1,23 +1,23 @@
 var menuopen = document.getElementById('loterias_menu');
-var submenu = document.getElementById('Submenu');
 var fechaActual = document.querySelectorAll('#cards_date')
 var fechaActualNacional = document.getElementById('cards_dates_nacional')
+var submenu = document.querySelector('.loteries_submenu');
 
-// console.log(fechaActual)
+console.log(submenu)
 // FECHAS CARDS
 
-var fechaManana = document.querySelectorAll('#cards_tomrow') 
 // console.log(fechaManana)
 
 
 // SUBMENU DESPLEGABLE
 function show_menu(){
-    submenu.classList.toggle('show')
+    submenu.style.display= "flex"
     
+    // alert("ok")
 }
-submenu.addEventListener('click', e =>{
-    if (e.target === submenu);
-})
+// submenu.addEventListener('click', e =>{
+//     if (e.target === submenu);
+// })
 
 // MENU RESPONSIVE DESPLEGABLE 
 var menuResponsive = document.getElementById('menu')
@@ -64,7 +64,7 @@ for(var i=0; i<fechaActual.length; i++){
 
 //AGREGAR FECHA DE MANANA (CARDS)
  
-  for(var i=0; i<fechaManana.length; i++){
-     fechaManana[i].textContent = diaDeManana;
-  }
+//   for(var i=0; i<fechaManana.length; i++){
+//      fechaManana[i].textContent = diaDeManana;
+//   }
 

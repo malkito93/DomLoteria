@@ -55,17 +55,60 @@ header ul
     list-style: none;
 
 }
+header ul ul
+{
+    display: none;
+    list-style: none;
+
+}
 header ul li
 {
     /* padding-top: 6px; */
     margin-right: 45px;
+    position: relative;
 
+}
+header ul li:hover ul
+{
+    display: block;
 }
 header ul li a 
  {
     color: white;
     text-decoration: none;
  }
+ /* SUBMENU */
+/* nav ul ul
+{
+    display: none;
+} */
+body nav ul ul
+{
+    display: none;
+    position: absolute;
+    /* top: 20px;  */
+    margin: 0;
+    margin-bottom: 5px;
+    list-style: none;
+    /* padding: 25px; */
+    flex-direction: column;
+    width: 260px;
+    z-index: 500;
+    padding-left: 0;
+}
+body ul ul li
+{
+    border-bottom: solid 1px #6e94b3;
+    margin-right: 0px;
+    cursor: pointer;
+    background: #3E6485;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body ul ul li a
+{
+    margin-left: 30px;
+}
 header .descargar_app
 {
     font-size: 20px;
@@ -98,7 +141,7 @@ header .descargar_app a
 
     
 }
-body .submenu
+/* body .submenu
 {
  display: none;
  width: 260px;
@@ -108,14 +151,9 @@ body .submenu
  z-index: 100;
  top: -155px;
  transition: 1s;
-}
-body .show
-{
-    display: block;
-    top: 96px;
-    right: 198px;  
-}
-body .submenu ul
+} */
+
+/* body .submenu ul
 {
     margin: 0;
     margin-bottom: 5px;
@@ -141,7 +179,7 @@ body .submenu ul li a{
     text-decoration: none;
     color: white;
     
-}
+} */
 
 /* CONTENEDOR TARGETAS */
 .container_cards_sidebar
@@ -172,7 +210,7 @@ body .submenu ul li a{
     font-weight: 400;
     padding-top: 8px;
     font-size: 18px;
-    /* text-transform: lowercase; */
+    text-transform: lowercase; 
 }
 .container .cards_case
 {
@@ -421,6 +459,15 @@ body footer .footer_info
         right: 0px;
         top: 81px;
         transition: all 1s;
+    }
+    body nav ul ul 
+    {
+        display: inline-flex;
+    }
+    body nav ul ul li
+    {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     header ul li 
     {
