@@ -2,7 +2,6 @@ var menuopen = document.getElementById('loterias_menu');
 var submenu = document.getElementById('Submenu');
 var fechaActual = document.querySelectorAll('#cards_date')
 var fechaActualNacional = document.getElementById('cards_dates_nacional')
-var menuResponsive = document.getElementById('menu_responsive')
 
 // console.log(fechaActual)
 // FECHAS CARDS
@@ -21,12 +20,20 @@ submenu.addEventListener('click', e =>{
 })
 
 // MENU RESPONSIVE DESPLEGABLE 
+var menuResponsive = document.getElementById('menu')
+console.log(menu)
 function openMenu(){
-    menuResponsive.style.display ='flex'
+    menuResponsive.classList.toggle('show_menu')
+
     }
 
-submenu.addEventListener('click', e =>{
-    if (e.target === submenu);
+window.addEventListener('click', e =>{
+    if(e.target !== menuResponsive ){
+        function openMenu(){
+            menuResponsive.classList.remove('show_menu')
+        
+            }
+    };
 })
 
 

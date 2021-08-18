@@ -88,29 +88,23 @@ fetch (url)
 .then(data => {
     data.forEach(loteria => {
 
-        //  NACIONAL TARDE
-        var nt1 = data[0].Sorteos[0].Elemento1;
-        var nt2 = data[0].Sorteos[0].Elemento2;
-        var nt3 = data[0].Sorteos[0].Elemento3;
-
-        nacionalTarde1[0].textContent = nt1
-        nacionalTarde2[0].textContent = nt2
-        nacionalTarde3[0].textContent = nt3
-
-        var qpHoy = data[0].Sorteos[0].Hoy;
-
-        if( qpHoy === 'S'){
-
-            nacionalTarde1[0].className ='active_bowling'
-            nacionalTarde2[0].className ='active_bowling'
-            nacionalTarde3[0].className ='active_bowling'
-          
-        }
-
         //QUINIELA PALE
         var qp1 = data[1].Sorteos[0].Elemento1;
         var qp2 = data[1].Sorteos[0].Elemento2;
         var qp3 = data[1].Sorteos[0].Elemento3;
+
+        //FECHA
+         var fecha_qp = data[1].Sorteos[0].Fecha;
+         var date_qp = document.querySelector('.qp_date').textContent = fecha_qp;
+
+        //NOMBRE LOTERIA
+        var qp_nombre = data[1].NombreLoteria;
+        var qpNombre = document.querySelector('.qp_name').textContent = qp_nombre;
+
+        //NOMBRE SORTEO
+        var qp_sorteo = data[1].Sorteos[0].NombreSorteo;
+        var amSorteo = document.querySelector('.qp_sorteo').textContent = qp_sorteo;
+         
 
         quinielaPale1[0].textContent = qp1
         quinielaPale2[0].textContent = qp2
@@ -132,11 +126,24 @@ fetch (url)
             quinielaPale2[1].className ='active_bowling'
             quinielaPale3[1].className ='active_bowling'          
         }
+       
 
         // ANGUILLA MANANA
         var am1 = data[8].Sorteos[0].Elemento1;
         var am2 = data[8].Sorteos[0].Elemento2;
         var am3 = data[8].Sorteos[0].Elemento3;
+
+        //FECHA
+        var fecha_am = data[8].Sorteos[0].Fecha;
+        var date_am = document.querySelector('.am_date').textContent = fecha_am;
+
+        //NOMBRE LOTERIA
+        var am_nombre = data[8].NombreLoteria;
+        var amNombre = document.querySelector('.am_name').textContent = am_nombre;
+
+        //NOMBRE SORTEO
+        var am_sorteo = data[8].Sorteos[0].NombreSorteo;
+        var amSorteo = document.querySelector('.am_sorteo').textContent = am_sorteo;
 
         var amHoy = data[8].Sorteos[0].Hoy;
 
@@ -162,6 +169,18 @@ fetch (url)
         var lp2 = data[5].Sorteos[0].Elemento2;
         var lp3 = data[5].Sorteos[0].Elemento3;
 
+       //FECHA
+       var fecha_lp = data[5].Sorteos[0].Fecha;
+       var date_lp = document.querySelector('.lp_date').textContent = fecha_lp;
+
+       //NOMBRE LOTERIA
+       var lp_nombre = data[5].NombreLoteria;
+       var lpNombre = document.querySelector('.lp_name').textContent = lp_nombre;
+
+       //NOMBRE SORTEO
+       var lp_sorteo = data[5].Sorteos[0].NombreSorteo;
+       var lpSorteo = document.querySelector('.lp_sorteo').textContent = lp_sorteo;
+
         var lpHoy = data[5].Sorteos[0].Hoy;
         // console.log(amHoy)
 
@@ -185,7 +204,19 @@ fetch (url)
         var ls2 = data[6].Sorteos[0].Elemento2;
         var ls3 = data[6].Sorteos[0].Elemento3;
 
-        var lsHoy = data[5].Sorteos[0].Hoy;
+        //FECHA
+        var fecha_ls = data[6].Sorteos[0].Fecha;
+        var date_ls = document.querySelector('.ls_date').textContent = fecha_ls;
+
+        //NOMBRE LOTERIA
+        var ls_nombre = data[6].NombreLoteria;
+        var lsNombre = document.querySelector('.ls_name').textContent = ls_nombre;
+
+        //NOMBRE SORTEO
+        var ls_sorteo = data[6].Sorteos[0].NombreSorteo;
+        var lsSorteo = document.querySelector('.ls_sorteo').textContent = ls_sorteo;
+
+        var lsHoy = data[6].Sorteos[0].Hoy;
         // console.log(lsHoy)
 
         if(lsHoy === 'S'){
@@ -208,10 +239,22 @@ fetch (url)
         laSuerte3[1].textContent = ls3
 
          // ANGUILLA DIA
-         var ad1 = data[8].Sorteos[1].Elemento1;
-         var ad2 = data[8].Sorteos[1].Elemento2;
-         var ad3 = data[8].Sorteos[1].Elemento3;
- 
+        var ad1 = data[8].Sorteos[1].Elemento1;
+        var ad2 = data[8].Sorteos[1].Elemento2;
+        var ad3 = data[8].Sorteos[1].Elemento3;
+        
+        //FECHA
+        var fecha_ad = data[8].Sorteos[1].Fecha;
+        var date_ad = document.querySelector('.ad_date').textContent = fecha_ad;
+
+        //NOMBRE LOTERIA
+        var ad_nombre = data[8].NombreLoteria;
+        var adNombre = document.querySelector('.ad_name').textContent = ad_nombre;
+
+        //NOMBRE SORTEO
+        var ad_sorteo = data[8].Sorteos[1].NombreSorteo;
+        var adSorteo = document.querySelector('.ad_sorteo').textContent = ad_sorteo;
+
          var adHoy = data[8].Sorteos[1].Hoy;
  
          if(adHoy === 'S'){
@@ -237,7 +280,19 @@ fetch (url)
          var qr1 = data[3].Sorteos[0].Elemento1;
          var qr2 = data[3].Sorteos[0].Elemento2;
          var qr3 = data[3].Sorteos[0].Elemento3;
- 
+         
+         //FECHA
+        var fecha_qr = data[3].Sorteos[0].Fecha;
+        var date_qr = document.querySelector('.qr_date').textContent = fecha_qr;
+
+        //NOMBRE LOTERIA
+        var qr_nombre = data[3].NombreLoteria;
+        var qrNombre = document.querySelector('.qr_name').textContent = qr_nombre;
+
+        //NOMBRE SORTEO
+        var qr_sorteo = data[3].Sorteos[0].NombreSorteo;
+        var qrSorteo = document.querySelector('.qr_sorteo').textContent = qr_sorteo;
+
          var qrHoy = data[3].Sorteos[0].Hoy;
          if(qrHoy === 'S'){
  
@@ -262,7 +317,19 @@ fetch (url)
           var fd1 = data[7].Sorteos[2].Elemento1;
           var fd2 = data[7].Sorteos[2].Elemento2;
           var fd3 = data[7].Sorteos[2].Elemento3;
-  
+
+          //FECHA
+        var fecha_fd = data[7].Sorteos[2].Fecha;
+        var date_fd = document.querySelector('.fd_date').textContent = fecha_fd;
+
+        //NOMBRE LOTERIA
+        var fd_nombre = data[7].NombreLoteria;
+        var fdNombre = document.querySelector('.fd_name').textContent = fd_nombre;
+
+        //NOMBRE SORTEO
+        var fd_sorteo = data[7].Sorteos[2].NombreSorteo;
+        var fdSorteo = document.querySelector('.fd_sorteo').textContent = fd_sorteo;
+
           var fdHoy = data[7].Sorteos[2].Hoy;
           if(fdHoy === 'S'){
   
@@ -287,7 +354,19 @@ fetch (url)
           var nyd1 = data[7].Sorteos[0].Elemento1;
           var nyd2 = data[7].Sorteos[0].Elemento2;
           var nyd3 = data[7].Sorteos[0].Elemento3;
-  
+          
+          //FECHA
+        var fecha_nyd = data[7].Sorteos[0].Fecha;
+        var date_nyd = document.querySelector('.nyd_date').textContent = fecha_nyd;
+
+        //NOMBRE LOTERIA
+        var nyd_nombre = data[7].NombreLoteria;
+        var nydNombre = document.querySelector('.nyd_name').textContent = nyd_nombre;
+
+        //NOMBRE SORTEO
+        var nyd_sorteo = data[7].Sorteos[0].NombreSorteo;
+        var nydSorteo = document.querySelector('.nyd_sorteo').textContent = nyd_sorteo;
+
           var nydHoy = data[7].Sorteos[0].Hoy;
           if(nydHoy === 'S'){
   
@@ -307,13 +386,56 @@ fetch (url)
           newYorkDia1[1].textContent = nyd1
           newYorkDia2[1].textContent = nyd2
           newYorkDia3[1].textContent = nyd3 
-              
+          
+          
+        //  NACIONAL TARDE
+        var nt1 = data[0].Sorteos[0].Elemento1;
+        var nt2 = data[0].Sorteos[0].Elemento2;
+        var nt3 = data[0].Sorteos[0].Elemento3;
+
+        //FECHA
+        var fecha_nt = data[0].Sorteos[0].Fecha;
+        var date_nt = document.querySelector('.nt_date').textContent = fecha_nt;
+
+        //NOMBRE LOTERIA
+        var nt_nombre = data[0].NombreLoteria;
+        var ntNombre = document.querySelector('.nt_name').textContent = nt_nombre;
+
+        //NOMBRE SORTEO
+        var nt_sorteo = data[0].Sorteos[0].NombreSorteo;
+        var ntSorteo = document.querySelector('.nt_sorteo').textContent = nt_sorteo;
+
+        nacionalTarde1[0].textContent = nt1
+        nacionalTarde2[0].textContent = nt2
+        nacionalTarde3[0].textContent = nt3
+
+        var qpHoy = data[0].Sorteos[0].Hoy;
+
+        if( qpHoy === 'S'){
+
+            nacionalTarde1[0].className ='active_bowling'
+            nacionalTarde2[0].className ='active_bowling'
+            nacionalTarde3[0].className ='active_bowling'
+      
+        }
          
           // LOTEDOM 
           var ld1 = data[5].Sorteos[1].Elemento1;
           var ld2 = data[5].Sorteos[1].Elemento2;
           var ld3 = data[5].Sorteos[1].Elemento3;
-  
+        
+          //FECHA
+        var fecha_ld = data[5].Sorteos[1].Fecha;
+        var date_ld = document.querySelector('.ld_date').textContent = fecha_ld;
+
+        //NOMBRE LOTERIA
+        var ld_nombre = data[5].NombreLoteria;
+        var ldNombre = document.querySelector('.ld_name').textContent = ld_nombre;
+
+        //NOMBRE SORTEO
+        var ld_sorteo = data[5].Sorteos[1].NombreSorteo;
+        var ldSorteo = document.querySelector('.ld_sorteo').textContent = ld_sorteo;
+
           var ldHoy = data[5].Sorteos[1].Hoy;
           if(ldHoy === 'S'){
   
@@ -340,6 +462,18 @@ fetch (url)
           var at2 = data[8].Sorteos[2].Elemento2;
           var at3 = data[8].Sorteos[2].Elemento3;
   
+        //FECHA
+        var fecha_at = data[8].Sorteos[2].Fecha;
+        var date_at = document.querySelector('.at_date').textContent = fecha_at;
+
+        //NOMBRE LOTERIA
+        var at_nombre = data[8].NombreLoteria;
+        var atNombre = document.querySelector('.at_name').textContent = at_nombre;
+
+        //NOMBRE SORTEO
+        var at_sorteo = data[8].Sorteos[2].NombreSorteo;
+        var atSorteo = document.querySelector('.at_sorteo').textContent = at_sorteo;
+
           var atHoy = data[8].Sorteos[2].Hoy;
           if(atHoy === 'S'){
   
@@ -351,7 +485,7 @@ fetch (url)
             anguillaTarde2[1].className ='active_bowling'
             anguillaTarde3[1].className ='active_bowling'
           }
- 
+          
           anguillaTarde1[0].textContent = at1
           anguillaTarde2[0].textContent = at2
           anguillaTarde3[0].textContent = at3 
@@ -364,7 +498,19 @@ fetch (url)
           var nn1 = data[0].Sorteos[1].Elemento1;
           var nn2 = data[0].Sorteos[1].Elemento2;
           var nn3 = data[0].Sorteos[1].Elemento3;
-  
+          
+          //FECHA
+        var fecha_nn = data[0].Sorteos[1].Fecha;
+        var date_nn = document.querySelector('.nn_date').textContent = fecha_nn;
+
+        //NOMBRE LOTERIA
+        var nn_nombre = data[0].NombreLoteria;
+        var nnNombre = document.querySelector('.nn_name').textContent = nn_nombre;
+
+        //NOMBRE SORTEO
+        var nn_sorteo = data[0].Sorteos[1].NombreSorteo;
+        var nnSorteo = document.querySelector('.nn_sorteo').textContent = nn_sorteo;
+
           var nnHoy = data[0].Sorteos[1].Hoy;
           if(nnHoy === 'S'){
   
@@ -390,7 +536,19 @@ fetch (url)
           var qlk1 = data[2].Sorteos[0].Elemento1;
           var qlk2 = data[2].Sorteos[0].Elemento2;
           var qlk3 = data[2].Sorteos[0].Elemento3;
-  
+          
+           //FECHA
+        var fecha_ltk = data[2].Sorteos[0].Fecha;
+        var date_ltk = document.querySelector('.ltk_date').textContent = fecha_ltk;
+
+        //NOMBRE LOTERIA
+        var ltk_nombre = data[2].NombreLoteria;
+        var ltkNombre = document.querySelector('.ltk_name').textContent = ltk_nombre;
+
+        //NOMBRE SORTEO
+        var ltk_sorteo = data[2].Sorteos[0].NombreSorteo;
+        var ltkSorteo = document.querySelector('.ltk_sorteo').textContent = ltk_sorteo;
+
           var qlkHoy = data[2].Sorteos[0].Hoy;
           if(qlkHoy === 'S'){
   
@@ -415,7 +573,19 @@ fetch (url)
           var an1 = data[8].Sorteos[3].Elemento1;
           var an2 = data[8].Sorteos[3].Elemento2;
           var an3 = data[8].Sorteos[3].Elemento3;
-  
+          
+        //FECHA
+        var fecha_an = data[8].Sorteos[3].Fecha;
+        var date_an = document.querySelector('.an_date').textContent = fecha_an;
+
+        //NOMBRE LOTERIA
+        var an_nombre = data[8].NombreLoteria;
+        var anNombre = document.querySelector('.an_name').textContent = an_nombre;
+
+        //NOMBRE SORTEO
+        var an_sorteo = data[8].Sorteos[3].NombreSorteo;
+        var anSorteo = document.querySelector('.an_sorteo').textContent = an_sorteo;
+
           var anHoy = data[8].Sorteos[3].Hoy;
           if(anHoy === 'S'){
   
@@ -442,6 +612,18 @@ fetch (url)
           var fn2 = data[7].Sorteos[3].Elemento2;
           var fn3 = data[7].Sorteos[3].Elemento3;
   
+          //FECHA
+        var fecha_fn = data[7].Sorteos[3].Fecha;
+        var date_fn = document.querySelector('.fn_date').textContent = fecha_fn;
+
+        //NOMBRE LOTERIA
+        var fn_nombre = data[7].NombreLoteria;
+        var fnNombre = document.querySelector('.fn_name').textContent = fn_nombre;
+
+        //NOMBRE SORTEO
+        var fn_sorteo = data[7].Sorteos[3].NombreSorteo;
+        var fnSorteo = document.querySelector('.fn_sorteo').textContent = fn_sorteo;
+
           var fnHoy = data[7].Sorteos[3].Hoy;
           if(fnHoy === 'S'){
   
@@ -466,7 +648,19 @@ fetch (url)
           var nyn1 = data[7].Sorteos[1].Elemento1;
           var nyn2 = data[7].Sorteos[1].Elemento2;
           var nyn3 = data[7].Sorteos[1].Elemento3;
-  
+          
+            //FECHA
+        var fecha_nyn = data[7].Sorteos[1].Fecha;
+        var date_nyn = document.querySelector('.nyn_date').textContent = fecha_nyn;
+
+        //NOMBRE LOTERIA
+        var nyn_nombre = data[7].NombreLoteria;
+        var nynNombre = document.querySelector('.nyn_name').textContent = nyn_nombre;
+
+        //NOMBRE SORTEO
+        var nyn_sorteo = data[7].Sorteos[1].NombreSorteo;
+        var nynSorteo = document.querySelector('.nyn_sorteo').textContent = nyn_sorteo;
+
           var nynHoy = data[7].Sorteos[1].Hoy;
           if(nynHoy === 'S'){
   

@@ -19,7 +19,7 @@
         </div>
         <div class="menu_and_link">
             <nav>
-                <ul>
+                <ul id="menu" class="">
                     <li>
                         <!-- <i class="fas fa-house-user"> -->
                         <a href="#">Inicio</a> 
@@ -51,16 +51,6 @@
             <li><a href="#">Primera</a> </li>
         </ul>
     </div>
-<!-- MENU RESPONSIVE -->
-    <div id="menu_responsive" class="menu_responsive">
-        <ul>
-            <li><a href="#" >Inicio</a> </li>
-            <li id="loterias_menu" >
-                <a href="#" onclick ="show_menu()">Loterias</a>
-             </li>
-            <li><a href="#">Sobre Nosotros</a> </li>
-        </ul>
-    </div>
     <!-- <div class="body_tittle">
         <div class="resultados">
             <img src="img/banner.png" alt="">
@@ -73,16 +63,16 @@
             <!-- QUINIELA PALE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Leidsa</h3>
+                    <h3 class="qp_name">Leidsa</h3>
                 </div>
-                <h3 class="game_name">Quiniela Palé</h3>
+                <h3 class="game_name qp_sorteo">Quiniela Palé</h3>
                 <div class="loteri_img">
                     <img src="img/quiniela pale.png" width="75px" alt="quiniela pale">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="qp_date cards_dates"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case quiniela_pale">
@@ -100,16 +90,16 @@
             <!-- ANGUILLA MAÑANA -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Anguilla</h3>
+                    <h3 class="am_name">Anguilla</h3>
                 </div>
-                <h3 class="game_name">Anguilla (Mañana)</h3>
+                <h3 class="game_name am_sorteo">Anguilla (Mañana)</h3>
                 <div class="loteri_img">
                     <img src="img/anguillaloterry.png" alt="aguilla mañana">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates am_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case anguilla_manana">
@@ -127,16 +117,16 @@
              <!-- LA PRIMERA -->
              <div class="cards">
                 <div class="card_tittle">
-                    <h3>Lotedom</h3>
+                    <h3 class="lp_name">Lotedom</h3>
                 </div>
-                <h3 class="game_name">La Primera</h3>
+                <h3 class="game_name lp_sorteo">La Primera</h3>
                 <div class="loteri_img">
                     <img src="img/la primera.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates lp_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -154,16 +144,16 @@
             <!-- LA SUERTE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>La Suerte</h3>
+                    <h3 class="ls_name">La Suerte</h3>
                 </div>
-                <h3 class="game_name">La Suerte</h3>
+                <h3 class="game_name ls_sorteo">La Suerte</h3>
                 <div class="loteri_img">
                     <img src="img/la suerte.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates ls_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -181,16 +171,16 @@
             <!-- ANGUILLA DIA-->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="ad_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Anguilla (Día)</h3>
+                <h3 class="game_name ad_sorteo">Anguilla (Día)</h3>
                 <div class="loteri_img">
                     <img src="img/anguillaloterry.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates ad_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -208,17 +198,17 @@
             <!-- QUINIELA REAL -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Loto Real</h3>
+                    <h3 class="qr_name">Loto Real</h3>
                 </div>
                 
-                <h3 class="game_name">Quiniela Real</h3>
+                <h3 class="game_name qr_sorteo">Quiniela Real</h3>
                 <div class="loteri_img">
                     <img src="img/loteria real.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates qr_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -236,16 +226,16 @@
             <!-- FLORIA DIA -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Florida Loterry</h3>
+                    <h3 class="fd_name">Florida Loterry</h3>
                 </div>
-                <h3 class="game_name">Florida (Día)</h3>
+                <h3 class="game_name fd_sorteo">Florida (Día)</h3>
                 <div class="loteri_img">
                     <img src="img/floriea lottery.jpg" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates fd_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -263,16 +253,16 @@
             <!-- NEW YORK DIA -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Florida Loterry</h3>
+                    <h3 class="nyd_name">Florida Loterry</h3>
                 </div>
-                <h3 class="game_name">New York (Día)</h3>
+                <h3 class="game_name nyd_sorteo">New York (Día)</h3>
                 <div class="loteri_img">
                     <img src="img/new york.jpg" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates nyd_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -290,16 +280,16 @@
             <!-- NACIONAL TARDE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="nt_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Nacional (Tarde)</h3>
+                <h3 class="game_name nt_sorteo">Nacional (Tarde)</h3>
                 <div class="loteri_img">
                     <img src="img/nacional.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates nt_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -317,16 +307,16 @@
             <!-- LOTEDOM -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="ld_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Lotedom</h3>
+                <h3 class="game_name ld_sorteo">Lotedom</h3>
                 <div class="loteri_img">
                     <img src="img/quinielalotedom.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates ld_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -344,16 +334,16 @@
             <!-- ANGUILLA TARDE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class=" at_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Anguilla (Tarde)</h3>
+                <h3 class="game_name at_sorteo">Anguilla (Tarde)</h3>
                 <div class="loteri_img">
                     <img src="img/anguillaloterry.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates at_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -371,16 +361,16 @@
             <!-- NACIONAL NOCHE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="nn_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Nacional (Noche)</h3>
+                <h3 class="game_name nn_sorteo">Nacional (Noche)</h3>
                 <div class="loteri_img">
                     <img src="img/nacional.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates nn_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -398,16 +388,16 @@
             <!-- QUINIELA LOTEKA -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Loteka</h3>
+                    <h3 class="ltk_name">Loteka</h3>
                 </div>
-                <h3 class="game_name">Quiniela Loteka</h3>
+                <h3 class="game_name ltk_sorteo">Quiniela Loteka</h3>
                 <div class="loteri_img">
                     <img src="img/loteka.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates ltk_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -425,16 +415,16 @@
             <!-- ANGUILLA NOCHE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="an_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Anguilla (Noche)</h3>
+                <h3 class="game_name an_sorteo">Anguilla (Noche)</h3>
                 <div class="loteri_img">
                     <img src="img/anguillaloterry.png" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates an_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -452,16 +442,16 @@
             <!-- FLORIDA NOCHE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="fn_name">Nacional</h3>
                 </div>
-                <h3 class="game_name">Florida (Noche)</h3>
+                <h3 class="game_name fn_sorteo">Florida (Noche)</h3>
                 <div class="loteri_img">
                     <img src="img/floriea lottery.jpg" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates fn_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">
@@ -479,16 +469,16 @@
             <!-- NEW YORK NOCHE -->
             <div class="cards">
                 <div class="card_tittle">
-                    <h3>Nacional</h3>
+                    <h3 class="nyn_name ">Nacional</h3>
                 </div>
-                <h3 class="game_name">New York (Noche)</h3>
+                <h3 class="game_name nyn_sorteo">New York (Noche)</h3>
                 <div class="loteri_img">
                     <img src="img/new york.jpg" alt="la primera">
                 </div>
                 <div class="card_info">
                     <div class="tittle_results">
                         <h4>Últimos Resultados</h4>
-                        <p class="cards_dates" id="cards_date"></p>
+                        <p class="cards_dates nyn_date" id="cards_date"></p>
                     </div>
                     <div class="bowling_results">
                         <div class="bowling_case">

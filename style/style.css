@@ -37,10 +37,7 @@ header .menu_and_link
 {
     display: none;
 }
-.menu_responsive
-    {
-        display: none; 
-    }
+
 header nav 
 {
     height: 100%;
@@ -174,6 +171,8 @@ body .submenu ul li a{
     text-align: center; 
     font-weight: 400;
     padding-top: 8px;
+    font-size: 18px;
+    /* text-transform: lowercase; */
 }
 .container .cards_case
 {
@@ -223,7 +222,7 @@ body .submenu ul li a{
 {
     text-align: center;
     color: gray;
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px;
 }
 .card_info .bowling_results
@@ -409,11 +408,19 @@ body footer .footer_info
         position: fixed;
         padding: 12px;
         margin-bottom: 5px;
-        right: 0px;
-        top: 81px;
+        right: -100px;
+        top: -81px;
         background: #3E6485;
         z-index: 400;
         height: 150px;
+        transition: all 1s;
+    }
+    header .show_menu
+    {
+        display: flex;
+        right: 0px;
+        top: 81px;
+        transition: all 1s;
     }
     header ul li 
     {
