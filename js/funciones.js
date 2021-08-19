@@ -10,9 +10,9 @@ console.log(submenu)
 
 
 // SUBMENU DESPLEGABLE
-function show_menu(){
-    submenu.style.display= "flex"
-    
+function show_menu() {
+    submenu.style.display = "flex"
+
     // alert("ok")
 }
 // submenu.addEventListener('click', e =>{
@@ -23,32 +23,32 @@ function show_menu(){
 var menuResponsive = document.getElementById('menu')
 console.log(menu)
 
-function openMenu(){
+function openMenu() {
     menuResponsive.classList.toggle('show_menu')
 
-    }
+}
 
-window.addEventListener('click', e =>{
-    if(e.target !== menuResponsive ){
-        function openMenu(){
+window.addEventListener('click', e => {
+    if (e.target !== menuResponsive) {
+        function openMenu() {
             menuResponsive.classList.remove('show_menu')
-        
-            }
+
+        }
     };
 })
 
 
 //FECHA DE HOY 
 let hoy = new Date()
-const meses = ['enero', 'Febrero','Marzo', 'Abril', 'Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre', 'Disciembre']
+const meses = ['enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Disciembre']
 
-let hora = hoy.getHours(); 
+let hora = hoy.getHours();
 let dia = hoy.getDate();
 let mes = hoy.getMonth();
 let anio = hoy.getFullYear();
 
-if (hora > 23){
-    bolo1_Nacional.style.color ="gray"
+if (hora > 23) {
+    bolo1_Nacional.style.color = "gray"
 }
 let pmes = meses[mes]
 
@@ -59,12 +59,12 @@ let diaDeManana = `${dia + 1} de ${pmes} (${anio})`
 // console.log(diaDeManana)
 // AGREGAR FECHA DE HOY CARDS
 
-for(var i=0; i<fechaActual.length; i++){
+for (var i = 0; i < fechaActual.length; i++) {
     fechaActual[i].textContent = formato1;
- }
+}
 
 //AGREGAR FECHA DE MANANA (CARDS)
- 
+
 //   for(var i=0; i<fechaManana.length; i++){
 //      fechaManana[i].textContent = diaDeManana;
 //   }

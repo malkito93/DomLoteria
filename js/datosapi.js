@@ -189,6 +189,10 @@ fetch (url)
             laPrimera1[0].className ='active_bowling'
             laPrimera2[0].className ='active_bowling'
             laPrimera3[0].className ='active_bowling'
+
+            laPrimera1[1].className ='active_bowling'
+            laPrimera2[1].className ='active_bowling'
+            laPrimera3[1].className ='active_bowling'
         }
         
         laPrimera1[0].textContent = lp1
@@ -413,9 +417,9 @@ fetch (url)
         nacionalTarde2[1].textContent = nt2
         nacionalTarde3[1].textContent = nt3
 
-        var qpHoy = data[0].Sorteos[0].Hoy;
+        var ntHoy = data[0].Sorteos[0].Hoy;
 
-        if( qpHoy === 'S'){
+        if( ntHoy === 'S'){
 
             nacionalTarde1[0].className ='active_bowling'
             nacionalTarde2[0].className ='active_bowling'

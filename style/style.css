@@ -303,6 +303,12 @@ body .submenu ul li a{
     margin-bottom: 25px;
    
 }
+.cards .more_info a 
+{
+    text-decoration: none;
+    color: white;
+}
+
 .cards .more_info h4
 {
     background: #0069BF;
@@ -314,12 +320,10 @@ body .submenu ul li a{
     font-size: 14px;
     
 }
-.cards .more_info h4 a
+.cards .more_info h4:hover
 {
-    text-decoration: none;
-    color: white;
+    background: #229bfd;
 }
-
 /* SIDEBAR */
 
 .sidebar .results_table_name
@@ -349,6 +353,7 @@ body .submenu ul li a{
     border-radius: 0 0 15px 15px;
     padding-bottom: 25px;
 }
+ /* resultados quinielas */
 .sidebar .results_table .qunielas_results
 {
     height: 35px;
@@ -364,8 +369,9 @@ body .submenu ul li a{
     display: flex;
     align-items: center;
 }
-.qunielas_results .quiniela_name p
+.qunielas_results .quiniela_name a
 {
+    text-decoration: none;
     margin: auto 5px;
     font-weight: 600;
     color: #1E3548;

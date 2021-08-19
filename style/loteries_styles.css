@@ -1,0 +1,451 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #E5ECF3;
+}
+p
+{
+    margin: 0;
+}
+h1
+{
+    margin:0;
+    font-size: 30px;
+}
+h3
+{
+    margin:0;
+    
+}
+header{
+    background-color: #1E3548;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-bottom: 3px solid #FFD500;
+    align-items: center;
+    z-index: 200;
+}
+header .menu_and_link
+{
+    display: flex;
+}
+.descargar_app_izq 
+{
+    display: none;
+}
+
+header nav 
+{
+    height: 100%;
+
+}
+header .burguer_menu
+ {
+     display: none;
+     color: white;
+ 
+ }
+header ul 
+{
+    display: flex;
+    list-style: none;
+
+}
+header ul ul
+{
+    display: none;
+    list-style: none;
+
+}
+header ul li
+{
+    /* padding-top: 6px; */
+    margin-right: 45px;
+    position: relative;
+
+}
+header ul li:hover ul
+{
+    display: block;
+}
+header ul li a 
+ {
+    color: white;
+    text-decoration: none;
+ }
+ /* SUBMENU */
+/* nav ul ul
+{
+    display: none;
+} */
+body nav ul ul
+{
+    display: none;
+    position: absolute;
+    /* top: 20px;  */
+    margin: 0;
+    margin-bottom: 5px;
+    list-style: none;
+    /* padding: 25px; */
+    flex-direction: column;
+    width: 260px;
+    z-index: 500;
+    padding-left: 0;
+}
+body ul ul li
+{
+    border-bottom: solid 1px #6e94b3;
+    margin-right: 0px;
+    cursor: pointer;
+    background: #3E6485;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+body ul ul li a
+{
+    margin-left: 30px;
+}
+header .descargar_app
+{
+    font-size: 20px;
+    font-weight: 600;
+    background: #FFD500;
+    border: solid 2px white;
+    padding: 0 15px;
+    border-radius: 50px;
+    /* height: 35px; */
+    padding: 10px;
+}
+header .descargar_app a
+{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+} 
+.container 
+{
+    width: 60%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+.container .nacional_results
+{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    border-radius: 15px;
+    margin-top: 15px; 
+}
+.container .nacional_results .n_tittle_table
+{
+    margin: auto;
+    background: #3E6485;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 36px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    border-bottom: 3px solid #FFD500;
+} 
+.n_tittle_table h3
+{
+    font-weight: 600;
+}
+.container .nacional_results .n_results_table
+{
+    background: white;
+    height: 75vh;
+    padding: 5px;
+    border-radius:0 0 15px 15px;
+}
+
+ /* resultados quinielas */
+  .qunielas_results
+ {
+     height: 40px;
+     display: flex;
+     border-bottom: 1px solid #3E6485;
+     padding: 5px;
+     margin-top: 1px;
+ }
+ .quiniela_results .logo
+ {
+    width: 80px;
+    overflow: hidden;
+ }
+  .qunielas_results .quiniela_name
+ {
+     width: 50%;
+     border-right: 1px solid #E5ECF3;
+     display: flex;
+     align-items: center;
+ }
+ .qunielas_results .quiniela_name p
+ {
+     margin: auto 15px;
+     font-weight: 600;
+     color: #1E3548;
+ }
+ .qunielas_results .quiniela_bowling
+ {
+     display: flex;
+     align-items: center;
+     align-content: center;
+     justify-content: space-around;
+     margin: auto;
+     padding-bottom: 5px;
+ }
+ .qunielas_results .quiniela_bowling span
+ {
+     width: 20px;
+     /* border: solid 1px gray; */
+     border-radius: 50px;
+     padding: 5px;
+     margin: 3px;
+     text-align: center;
+     background: #909090;
+     color: white;
+ }
+ 
+ .qunielas_results .quiniela_bowling .active_bowling
+ {
+     background: #0C8337;
+ }
+
+ /* RESPONSIVE  TABLET*/
+
+@media screen and (max-width: 768px)  
+{
+    .descargar_app_izq 
+    {
+    display: block;
+    }
+    header .descargar_app_der
+    {
+    display: none;
+    }
+    header .burguer_menu
+    {
+     display: block;
+     color: white;
+     font-size: 28px;
+ 
+    }
+    header ul 
+    {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        padding: 12px;
+        margin-bottom: 5px;
+        right: -100px;
+        top: -81px;
+        z-index: 400;
+        height: 150px;
+        transition: all 1s;
+    }
+    header .show_menu
+    {
+        display: flex;
+    right: 0px;
+    top: 81px;
+    transition: all 1s;
+    /* background: #3E6485; */
+    height: auto;
+    padding: 0;
+    }
+   
+    header ul li 
+    {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        background: #3E6485;
+    }
+    header ul li:hover ul
+    {
+        display: block;
+    }
+    header ul li a
+    {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    /* submenu despleglable */
+    body nav ul ul 
+    {
+        background: none;
+        display: none;
+        position: absolute;
+        /* left: 0; */
+        height: auto;
+        right: 226px;
+        top: -109px;
+    }
+    body nav ul ul li
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* MENU RESPONSIBE */
+    body .menu_responsive
+    {
+        display: none;
+        width: 200px;
+        background: #3E6485;
+        position: absolute;
+        z-index: 600;
+        right: 0;
+        top: 96px;
+    }
+    body .menu_responsive ul 
+    {
+        list-style: none;  
+    }
+    body .menu_responsive ul li
+    {
+        margin-top: 5px; 
+    }
+    body .menu_responsive ul a
+    {
+        text-decoration: none;
+        color: white;
+
+    
+    }
+    
+    .submenu
+    {
+    display: none;
+    width: 260px;
+    background: #3E6485;
+    position: absolute;
+    right: 244px;
+    z-index: 100;
+    top: 68px;
+    right: 200px;
+    transition: 1s;
+    }
+    body .container_cards_sidebar
+    {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    body .container_cards_sidebar .sidebar
+    {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 642px)  
+{
+    .descargar_app_izq 
+    {
+    display: block;
+    }
+    header .descargar_app_der
+    {
+    display: none;
+    }
+    header .descargar_app {
+        font-size: 12px;
+        font-weight: 600;
+        background: #FFD500;
+        border: solid 2px white;
+        padding: 0 15px;
+        border-radius: 50px;
+        height: 41px;
+        padding: 10px;
+        width: 85px;
+        text-align: center;
+    }
+    header .burguer_menu
+    {
+     display: block;
+     color: white;
+     font-size: 28px;
+ 
+    }
+    header ul 
+    {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        padding: 12px;
+        margin-bottom: 5px;
+        right: 0px;
+        top: 81px;
+        background: #3E6485;
+        z-index: 400;
+        height: 150px;
+    }
+    header ul li 
+    {
+        /* padding: 10px; */
+        width: 100%;
+        margin-bottom: 3px;
+        border-bottom: solid 1px #6e94b3;
+        transition: 0.2s;
+    }
+    header ul li a
+    {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .submenu
+    {
+    display: none;
+    width: 260px;
+    background: #3E6485;
+    position: absolute;
+    right: 244px;
+    z-index: 100;
+    top: 68px;
+    right: 200px;
+    transition: 1s;
+    }
+
+    
+/* RESPONSIVE  MOVIL*/
+@media screen and (max-width: 400px)  
+{   
+    header {
+        background-color: #1E3548;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 3px solid #FFD500;
+        align-items: center;
+        z-index: 200;
+    }
+    header .descargar_app 
+    {
+        font-size: 12px;
+        font-weight: 600;
+        background: #FFD500;
+        border: solid 2px white;
+        padding: 0 15px;
+        border-radius: 50px;
+        height: 41px;
+        padding: 10px;
+        width: 76px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Loteria</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="style/loteries_styles.css">
+    <link rel="shortcut icon" href="img/DomLoteria-02.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div
+         class="descargar_app descargar_app_izq" >
+            <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" width="105px" alt="">
+            </a>
+        </div>
+        <div class="menu_and_link">
+            <nav>
+                <ul id="menu" class="">
+                    <li>
+                        <!-- <i class="fas fa-house-user"> -->
+                        <a href="index.html">Inicio</a> 
+                    </li>
+                    <li id="loterias_menu" >
+                       <a class="loterias" href="#">Loterias</a>
+                       <ul class="loteries_submenu" >
+                           <li style="opacity: 0;">Test</li>
+                           <li><a href="#">Loteria Nacional</a></li>
+                           <li><a href="#">Leidsa</a></li>
+                           <li><a href="#">Loteka</a></li>
+                           <li><a href="#">Loto Real</a></li>
+                           <li><a href="#">New York</a></li>
+                           <li><a href="#">Lotdom</a></li>
+                           <li><a href="#">La Suerte</a></li>
+                           <li><a href="#">Florida</a></li>
+                           <li><a href="#">Anguilla</a></li>
+                       </ul>
+                    </li>
+                    <li>
+                       <a href="#">Sobre Nosotros</a> 
+                    </li>
+                </ul>
+            </nav>
+            <div
+             class="descargar_app descargar_app_der" >
+                <a href="https://play.google.com/store/apps/details?id=com.embarcadero.Recarga360&hl=es_DO&gl=US" target="_blank" >Descargar App</a> 
+            </div>
+        </div>
+        <div class="burguer_menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="l_nacional_case">
+            <h1>Loteria Nacional</h1>
+            <div class="nacional_results">
+                <div class="n_tittle_table">
+                    <h3>TODOS LOS SORTEOS</h3>
+                </div>
+                <div class="n_results_table">
+                    <!-- NACIONAL TARDE -->
+                    <div class="nacional_dia">
+                        <div class="qunielas_results">
+                            
+                            <div class="quiniela_name">
+                                <div class="logo">
+                                    <img src="img/nacional.png" width= "80px" alt="">
+                                </div>
+                                <p> Nacional Tarde</p>
+                            </div>
+                            <div class="quiniela_bowling">
+                                    <span class="nacional_tarde1"> 00 </span>
+                                    <span class="nacional_tarde2"> 00 </span>
+                                    <span class="nacional_tarde3"> 00 </span>                       
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NACIONAL NOCHE -->
+                    <div class="nacional_dia">
+                        <div class="qunielas_results">
+                            <div class="quiniela_name">
+                                <div class="logo">
+                                    <img src="img/nacional.png" width= "80px" alt="">
+                                </div>
+                                <p>Nacional noc.</p>
+                            </div>
+                            <div class="quiniela_bowling">
+                                    <span class="nacional_noche1"> 00 </span>
+                                    <span class="nacional_noche2"> 00 </span>
+                                    <span class="nacional_noche3"> 00 </span>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/funciones.js"></script>
+    <script src="js/nacional.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
