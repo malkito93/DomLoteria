@@ -322,8 +322,6 @@ header .descargar_app a
     {
         text-decoration: none;
         color: white;
-
-    
     }
     
     .submenu
@@ -346,6 +344,10 @@ header .descargar_app a
     body .container_cards_sidebar .sidebar
     {
         order: 1;
+    }
+    .quiniela_name .logo
+    {
+        display: flex;
     }
 }
 
@@ -420,7 +422,15 @@ header .descargar_app a
     right: 200px;
     transition: 1s;
     }
-
+    .quiniela_name .logo
+    {
+        display: none;
+    }
+    body .container
+    {
+        width: 85%;
+    }
+}
     
 /* RESPONSIVE  MOVIL*/
 @media screen and (max-width: 400px)  
@@ -447,5 +457,18 @@ header .descargar_app a
         padding: 10px;
         width: 76px;
         text-align: center;
+    }
+    body .container h1 
+    {
+        font-size: 22px;  
+    }
+    body .show_menu
+    {
+        width: 175px;
+    }
+    body nav ul ul {
+        width: 170px;
+        right: 203px;
+        top: -113px;
     }
 }

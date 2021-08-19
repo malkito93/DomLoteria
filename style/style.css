@@ -625,6 +625,15 @@ body footer .footer_info
     right: 200px;
     transition: 1s;
     }
+    body .show_menu
+    {
+        width: 175px;
+    }
+    body nav ul ul {
+        width: 170px;
+        right: 203px;
+        top: -113px;
+    }
     body .container_cards_sidebar
     {
     display: flex;
@@ -780,5 +789,14 @@ body footer .footer_info
     body footer 
     {
         display: none;
+    }
+    body .show_menu
+    {
+        width: 175px;
+    }
+    body nav ul ul {
+        width: 170px;
+        right: 203px;
+        top: -113px;
     }
 }
