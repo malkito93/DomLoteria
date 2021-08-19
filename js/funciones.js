@@ -2,6 +2,7 @@ var menuopen = document.getElementById('loterias_menu');
 var fechaActual = document.querySelectorAll('#cards_date')
 var fechaActualNacional = document.getElementById('cards_dates_nacional')
 var submenu = document.querySelector('.loteries_submenu');
+var menuCloser = document.querySelector('.menu_closer')
 
 console.log(submenu)
 // FECHAS CARDS
@@ -25,17 +26,18 @@ console.log(menu)
 
 function openMenu() {
     menuResponsive.classList.toggle('show_menu')
+    menuCloser.classList.toggle('show_menu_closer')
 
 }
-
 window.addEventListener('click', e => {
-    if (e.target !== menuResponsive) {
-        function openMenu() {
-            menuResponsive.classList.remove('show_menu')
-
-        }
+    if (e.target == menuCloser){
+        menuResponsive.classList.toggle('show_menu')
+        menuCloser.classList.toggle('show_menu_closer')
     };
+    console.log(e.target)
 })
+
+// cerrar menu
 
 
 //FECHA DE HOY 
