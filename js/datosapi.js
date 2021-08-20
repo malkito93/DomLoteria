@@ -114,7 +114,7 @@ fetch (url)
         quinielaPale2[1].textContent = qp2
         quinielaPale3[1].textContent = qp3
 
-        var qpHoy = data[0].Sorteos[0].Hoy;
+        var qpHoy = data[1].Sorteos[0].Hoy;
 
         if( qpHoy === 'S'){
 

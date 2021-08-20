@@ -15,7 +15,7 @@ fetch(url)
     .then(data => {
         data.forEach(loteria => {
 
-            //NACIONAL  NOCHE
+            //NACIONAL  TARDE
             var nt1 = data[0].Sorteos[0].Elemento1;
             var nt2 = data[0].Sorteos[0].Elemento2;
             var nt3 = data[0].Sorteos[0].Elemento3;
@@ -28,9 +28,9 @@ fetch(url)
            
             if (ntHoy === 'S') {
 
-                nacionalTarde1[0].className = 'active_bowling'
-                nacionalTarde2[0].className = 'active_bowling'
-                nacionalTarde3[0].className = 'active_bowling'
+                nacionalTarde1.className = 'active_bowling'
+                nacionalTarde2.className = 'active_bowling'
+                nacionalTarde3.className = 'active_bowling'
 
             }
            

@@ -224,6 +224,27 @@ header .descargar_app a
 
 @media screen and (max-width: 768px)  
 {
+    /* menu closer */
+    body .menu_closer
+    {
+        display: none;
+        width: 100%;
+        position: fixed;
+        background: black;
+        height: 100%;
+        z-index: 800;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        z-index: 100;
+        transition: all 1s;
+    }
+    body .show_menu_closer
+    {
+        display: flex;
+    }
     .descargar_app_izq 
     {
     display: block;
