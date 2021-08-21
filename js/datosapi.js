@@ -152,6 +152,10 @@ fetch (url)
             anguillaManana1[0].className ='active_bowling'
             anguillaManana2[0].className ='active_bowling'
             anguillaManana3[0].className ='active_bowling'
+
+            anguillaManana1[1].className ='active_bowling'
+            anguillaManana2[1].className ='active_bowling'
+            anguillaManana3[1].className ='active_bowling'
         }
         
         anguillaManana1[0].textContent = am1
@@ -164,7 +168,6 @@ fetch (url)
 
 
         // LA PRIMERA
-
         var lp1 = data[5].Sorteos[0].Elemento1;
         var lp2 = data[5].Sorteos[0].Elemento2;
         var lp3 = data[5].Sorteos[0].Elemento3;
