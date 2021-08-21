@@ -492,4 +492,22 @@ header .descargar_app a
         right: 203px;
         top: -113px;
     }
+    .info_case
+{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+.info_case img 
+{
+    width: 200px;
+}
+}
+/* about us */
+.info_case
+{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
