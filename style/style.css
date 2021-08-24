@@ -130,16 +130,25 @@ header .descargar_app a
 {
     padding-inline: 50px;
 }
+.slider 
+{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
 .body_banner 
 {
     /* position: absolute; */
     /* top: -95px; */
-    padding-top: 15px;
-    padding-bottom: 25px;
     display: flex;
-    margin-left: 15px;
-    justify-content: center;
-    
+    height: 80%;
+    padding-top: 15px;
+    width: 400%;
+    /* padding-bottom: 15px; */
+}
+.body_banner img
+{
+    width: 100%;
 }
 
 /* CONTENEDOR TARGETAS */
@@ -445,13 +454,14 @@ body footer .footer_info
     }
     header .show_menu
     {
-        display: flex;
+    display: flex;
     right: 0px;
     top: 81px;
     transition: all 1s;
     /* background: #3E6485; */
     height: auto;
     padding: 0;
+    position: absolute;
     }
    
     header ul li 
@@ -612,11 +622,11 @@ body footer .footer_info
     }
     body .show_menu
     {
-        width: 175px;
+        width: 150px;
     }
     body nav ul ul {
         width: 170px;
-        right: 203px;
+        right: 185px;
         top: -113px;
     }
     body .container_cards_sidebar
@@ -814,11 +824,12 @@ body footer .footer_info
     }
     body .show_menu
     {
-        width: 175px;
+        width: 145px;
+        transition: all 2s;
     }
     body nav ul ul {
-        width: 170px;
-        right: 203px;
-        top: -113px;
+        width: 150px;
+        right: 176px;
+        top: -114px;
     }
 }
