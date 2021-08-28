@@ -130,25 +130,29 @@ header .descargar_app a
 {
     padding-inline: 50px;
 }
-.slider 
+.slider
 {
-    width: 95%;
+    position: relative;
+}
+.slider img
+{
     margin: auto;
-    overflow: hidden;
 }
-.body_banner 
+.slider .body_banner
 {
-    /* position: absolute; */
-    /* top: -95px; */
-    display: flex;
-    height: 80%;
-    padding-top: 15px;
-    width: 400%;
-    /* padding-bottom: 15px; */
+    width: 65%;
 }
-.body_banner img
+.slider .btn_back
 {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 35px);
+}
+.slider .btn_next
+{
+    position: absolute;
+    right:0;
+    top: calc(50% - 35px);
 }
 
 /* CONTENEDOR TARGETAS */

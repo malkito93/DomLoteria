@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Loteria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/DomLoteria-02.png" type="image/x-icon">
 </head>
@@ -66,16 +67,26 @@
     </div> -->
     <div class="slider">
         <div class="body_banner">
-            <div class="banner_img1">
-                 <img src="img/banner.png" width="100%" alt=""> 
+            <div class="banner_img">
+                 <img src="img/banner.png" alt=""> 
+                 <p>imagen 1</p>
             </div>
-             <div class="banner_img2">
-                 <img src="img/banner.png" width="100%" alt=""> 
+             <div class="banner_img">
+                 <img src="img/banner.png" alt=""> 
+                 <p>imagen 2</p>
             </div>
-            <div class="banner_img3">
-                 <img src="img/banner.png" width="100%" alt=""> 
+            <div class="banner_img">
+                 <img src="img/banner.png" alt=""> 
+                 <p>imagen 3</p>
             </div>
         </div>
+        <button class="btn_back">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn_next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div role="tablist" class="indicadores"></div>
     </div> 
     <div class="container_cards_sidebar">
 
@@ -721,6 +732,8 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="js/slider.js"></script>
 <script src="js/datosapi.js"></script>
 <script src="js/funciones.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

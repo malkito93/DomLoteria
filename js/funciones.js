@@ -65,9 +65,4 @@ for (var i = 0; i < fechaActual.length; i++) {
     fechaActual[i].textContent = formato1;
 }
 
-//AGREGAR FECHA DE MANANA (CARDS)
-
-//   for(var i=0; i<fechaManana.length; i++){
-//      fechaManana[i].textContent = diaDeManana;
-//   }
 
