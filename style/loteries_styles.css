@@ -549,6 +549,10 @@ header .descargar_app a
         right: 176px;
         top: -114px;
     }
+    body nav ul ul li {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 /* about us */
 .info_case

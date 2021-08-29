@@ -133,6 +133,9 @@ header .descargar_app a
 .slider
 {
     position: relative;
+    max-width: 1275px;
+    margin-inline: auto;
+    margin-top: 20px;
 }
 .slider img
 {
@@ -644,6 +647,10 @@ body footer .footer_info
     padding-inline: 15px;
     margin-bottom: 40px;
     
+    }
+    .slider
+    {
+        display: none;
     }
     .container .cards 
     {

@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
         rewind:true,
         arrows: {
           prev: '.btn_back',
-          next: '.btn_next'
+          next: siguiente
         }
     });
 })
