@@ -156,6 +156,7 @@ header .descargar_app a
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .slider .btn_next
 {
@@ -166,6 +167,7 @@ header .descargar_app a
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 /* CONTENEDOR TARGETAS */
@@ -414,6 +416,10 @@ body footer .footer_info
     display: flex;
     justify-content: space-between;
 } 
+body .info_case img
+{
+    margin: auto;
+}
 
 /* RESPONSIVE  TABLET*/
 
@@ -539,8 +545,6 @@ body footer .footer_info
     {
         text-decoration: none;
         color: white;
-
-    
     }
     
     .submenu
@@ -839,10 +843,10 @@ body footer .footer_info
     right: 200px;
     transition: 1s;
     }
-    body footer 
+    /* body footer 
     {
         display: none;
-    }
+    } */
     body .show_menu
     {
         width: 145px;

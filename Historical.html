@@ -59,26 +59,29 @@
     <div class="container">
         <div class="menu_closer"></div>
         <div class="l_loterie_case">
-            <h1>Loto Real</h1>
+            <h1>Historial</h1>
             <div class="nacional_results">
                 <div class="n_tittle_table">
-                    <h3>TODOS LOS SORTEOS</h3>
+                    <h3>HISTORIAL</h3>
                 </div>
+                <select style="height: 65px;" name="loteries">
+                    <option value="1">Nacional</option>
+                    <option value="2" selected>Loteka</option>
+                    <option value="3">Leidsa</option>
+                  </select>
                 <div class="n_results_table">
-                    
-                    <!-- Loto Real -->
+                    <!-- NACIONAL TARDE -->
                     <div class="loteria">
-                        <div class="qunielas_results">
-                            <div class="quiniela_name">
-                                <div class="logo">
-                                    <img src="img/loteria real.png" width= "80px" alt="quiniela pale">
-                                </div>
-                                <p>Loto Real</p>
+                        <div class="historical_results"  style="display: flex; justify-content: space-between;">
+                            
+                            <div class="quiniela_bowling" style="margin-right: 50px; ">
+                                <p>00</p>
+                                <!-- <span class="nacional_tarde1"> -- </span>
+                                <span class="nacional_tarde2"> -- </span>
+                                <span class="nacional_tarde3"> -- </span> -->
                             </div>
-                            <div class="quiniela_bowling">
-                                    <span id=quiniela_real1" class="quiniela_real1"> --</span>
-                                    <span id=quiniela_real2" class="quiniela_real2"> --</span>
-                                    <span id=quiniela_real3" class="quiniela_real3"> --</span>                       
+                            <div class="date">
+                                <p class="date_bowling"></p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,7 @@
         </div>
     </div>
     <script src="js/funciones.js"></script>
-    <script src="js/loto_real.js"></script>
+    <script src="js/anguilla_h.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>

@@ -21,7 +21,6 @@ const anguillaNoche2 = document.querySelector('.anguilla_noche2')
 const anguillaNoche3 = document.querySelector('.anguilla_noche3')
 
 
-
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())
