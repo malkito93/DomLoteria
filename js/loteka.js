@@ -16,6 +16,10 @@ fetch(url)
             var qlk2 = data[2].Sorteos[0].Elemento2;
             var qlk3 = data[2].Sorteos[0].Elemento3;
 
+            //NOMBRE SORTEO
+        var ltk_sorteo = data[2].Sorteos[0].NombreSorteo;
+        var ltkSorteo = document.querySelector('.ltk_sorteo').textContent = ltk_sorteo;
+        
             quinielaLoteka1.textContent = qlk1
             quinielaLoteka2.textContent = qlk2
             quinielaLoteka3.textContent = qlk3 

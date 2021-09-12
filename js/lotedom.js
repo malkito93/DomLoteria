@@ -21,6 +21,10 @@ fetch(url)
         var lp2 = data[5].Sorteos[0].Elemento2;
         var lp3 = data[5].Sorteos[0].Elemento3;
 
+        //NOMBRE SORTEO
+       var lp_sorteo = data[5].Sorteos[0].NombreSorteo;
+       var lpSorteo = document.querySelector('.lp_sorteo').textContent = lp_sorteo;
+
         var lpHoy = data[5].Sorteos[0].Hoy;
 
         if(lpHoy === 'S'){
@@ -40,6 +44,10 @@ fetch(url)
           var ld2 = data[5].Sorteos[1].Elemento2;
           var ld3 = data[5].Sorteos[1].Elemento3;
 
+          //NOMBRE SORTEO
+        var ld_sorteo = data[5].Sorteos[1].NombreSorteo;
+        var ldSorteo = document.querySelector('.ld_sorteo').textContent = ld_sorteo;
+        
           var ldHoy = data[5].Sorteos[1].Hoy;
           if(ldHoy === 'S'){
   

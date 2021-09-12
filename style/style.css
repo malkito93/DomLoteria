@@ -199,7 +199,7 @@ header .descargar_app a
     font-weight: 400;
     padding-top: 8px;
     font-size: 18px;
-    text-transform: lowercase; 
+    /* text-transform: lowercase;  */
 }
 .container .cards_case
 {
@@ -347,14 +347,14 @@ header .descargar_app a
 {
     height: 35px;
     display: flex;
-    border-bottom: 1px solid #3E6485;
+    border-bottom: 1px solid silver;
     padding: 5px;
     margin-top: 1px;
 }
 .sidebar .results_table .qunielas_results .quiniela_name
 {
     width: 50%;
-    border-right: 1px solid gray;
+    /* border-right: 1px solid gray; */
     display: flex;
     align-items: center;
 }

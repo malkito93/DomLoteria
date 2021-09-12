@@ -20,6 +20,10 @@ fetch(url)
             var nt2 = data[0].Sorteos[0].Elemento2;
             var nt3 = data[0].Sorteos[0].Elemento3;
 
+            //NOMBRE SORTEO
+        var nt_sorteo = data[0].Sorteos[0].NombreSorteo;
+        var ntSorteo = document.querySelector('.nt_sorteo').textContent = nt_sorteo;
+
             nacionalTarde1.textContent = nt1
             nacionalTarde2.textContent = nt2
             nacionalTarde3.textContent = nt3
@@ -39,6 +43,10 @@ fetch(url)
             var nn2 = data[0].Sorteos[1].Elemento2;
             var nn3 = data[0].Sorteos[1].Elemento3;
 
+            //NOMBRE SORTEO
+        var nn_sorteo = data[0].Sorteos[1].NombreSorteo;
+        var nnSorteo = document.querySelector('.nn_sorteo').textContent = nn_sorteo;
+        
             nacionalNoche1.textContent = nn1
             nacionalNoche2.textContent = nn2
             nacionalNoche3.textContent = nn3

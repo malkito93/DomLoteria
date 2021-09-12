@@ -16,6 +16,9 @@ fetch(url)
             var ls2 = data[6].Sorteos[0].Elemento2;
             var ls3 = data[6].Sorteos[0].Elemento3;
 
+             //NOMBRE SORTEO
+        var ls_sorteo = data[6].Sorteos[0].NombreSorteo;
+        var lsSorteo = document.querySelector('.ls_sorteo').textContent = ls_sorteo;
             var lsHoy = data[6].Sorteos[0].Hoy;
             // console.log(lsHoy)
     

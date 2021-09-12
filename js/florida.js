@@ -31,6 +31,10 @@ fetch(url)
           var nyd2 = data[7].Sorteos[0].Elemento2;
           var nyd3 = data[7].Sorteos[0].Elemento3;
 
+          //NOMBRE SORTEO
+        var nyd_sorteo = data[7].Sorteos[0].NombreSorteo;
+        var nydSorteo = document.querySelector('.nyd_sorteo').textContent = nyd_sorteo;
+
           var nydHoy = data[7].Sorteos[0].Hoy;
           if(nydHoy === 'S'){
   
@@ -43,11 +47,15 @@ fetch(url)
           newYorkDia2.textContent = nyd2
           newYorkDia3.textContent = nyd3 
           
-          // New York Noche
+          // NEW YORK TARDE 
           var nyn1 = data[7].Sorteos[1].Elemento1;
           var nyn2 = data[7].Sorteos[1].Elemento2;
           var nyn3 = data[7].Sorteos[1].Elemento3;
 
+           //NOMBRE SORTEO
+        var nt_sorteo = data[0].Sorteos[0].NombreSorteo;
+        var ntSorteo = document.querySelector('.nt_sorteo').textContent = nt_sorteo;
+        
           var nynHoy = data[7].Sorteos[1].Hoy;
           if(nynHoy === 'S'){
   
@@ -65,6 +73,10 @@ fetch(url)
           var fd2 = data[7].Sorteos[2].Elemento2;
           var fd3 = data[7].Sorteos[2].Elemento3;
     
+           //NOMBRE SORTEO
+        var fd_sorteo = data[7].Sorteos[2].NombreSorteo;
+        var fdSorteo = document.querySelector('.fd_sorteo').textContent = fd_sorteo;
+
           var fdHoy = data[7].Sorteos[2].Hoy;
           if(fdHoy === 'S'){
   
@@ -81,6 +93,10 @@ fetch(url)
            var fn1 = data[7].Sorteos[3].Elemento1;
            var fn2 = data[7].Sorteos[3].Elemento2;
            var fn3 = data[7].Sorteos[3].Elemento3;
+
+            //NOMBRE SORTEO
+        var fn_sorteo = data[7].Sorteos[3].NombreSorteo;
+        var fnSorteo = document.querySelector('.fn_sorteo').textContent = fn_sorteo;
 
            var fnHoy = data[7].Sorteos[3].Hoy;
            if(fnHoy === 'S'){

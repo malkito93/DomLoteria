@@ -481,6 +481,7 @@ fetch (url)
         var fecha_at = data[8].Sorteos[2].Fecha;
         var date_at = document.querySelector('.at_date').textContent = fecha_at;
 
+        console.log(data)
         //NOMBRE LOTERIA
         var at_nombre = data[8].NombreLoteria;
         var atNombre = document.querySelector('.at_name').textContent = at_nombre;

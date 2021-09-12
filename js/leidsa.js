@@ -14,6 +14,10 @@ fetch(url)
         var qp1 = data[1].Sorteos[0].Elemento1;
         var qp2 = data[1].Sorteos[0].Elemento2;
         var qp3 = data[1].Sorteos[0].Elemento3;
+      
+        //NOMBRE SORTEO
+        var qp_sorteo = data[1].Sorteos[0].NombreSorteo;
+        var amSorteo = document.querySelector('.qp_sorteo').textContent = qp_sorteo;
         
         quinielaPale1.textContent = qp1
         quinielaPale2.textContent = qp2

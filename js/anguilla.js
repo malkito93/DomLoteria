@@ -34,6 +34,10 @@ fetch(url)
 
         var amHoy = data[8].Sorteos[0].Hoy;
 
+        //NOMBRE SORTEO
+        var am_sorteo = data[8].Sorteos[0].NombreSorteo;
+        var amSorteo = document.querySelector('.am_sorteo').textContent = am_sorteo;
+
         if(amHoy === 'S'){
 
             anguillaManana1.className ='active_bowling'
@@ -49,6 +53,10 @@ fetch(url)
         var ad1 = data[8].Sorteos[1].Elemento1;
         var ad2 = data[8].Sorteos[1].Elemento2;
         var ad3 = data[8].Sorteos[1].Elemento3;
+
+        //NOMBRE SORTEO
+        var ad_sorteo = data[8].Sorteos[1].NombreSorteo;
+        var adSorteo = document.querySelector('.ad_sorteo').textContent = ad_sorteo;
 
         var adHoy = data[8].Sorteos[1].Hoy;
  
@@ -68,6 +76,10 @@ fetch(url)
           var at2 = data[8].Sorteos[2].Elemento2;
           var at3 = data[8].Sorteos[2].Elemento3;
     
+          //NOMBRE SORTEO
+        var at_sorteo = data[8].Sorteos[2].NombreSorteo;
+        var atSorteo = document.querySelector('.at_sorteo').textContent = at_sorteo;
+
           var atHoy = data[8].Sorteos[2].Hoy;
           if(atHoy === 'S'){
   
@@ -85,6 +97,10 @@ fetch(url)
           var an2 = data[8].Sorteos[3].Elemento2;
           var an3 = data[8].Sorteos[3].Elemento3;
 
+          //NOMBRE SORTEO
+        var an_sorteo = data[8].Sorteos[3].NombreSorteo;
+        var anSorteo = document.querySelector('.an_sorteo').textContent = an_sorteo;
+        
           var anHoy = data[8].Sorteos[3].Hoy;
           if(anHoy === 'S'){
   

@@ -1,5 +1,5 @@
 var menuopen = document.getElementById('loterias_menu');
-var fechaActual = document.querySelectorAll('#cards_date')
+// var fechaActual = document.querySelectorAll('#cards_date')
 var fechaActualNacional = document.getElementById('cards_dates_nacional')
 var submenu = document.querySelector('.loteries_submenu');
 var menuCloser = document.querySelector('.menu_closer')
