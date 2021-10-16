@@ -10,6 +10,11 @@ const nacionalNoche1 = document.querySelector('.nacional_noche1')
 const nacionalNoche2 = document.querySelector('.nacional_noche2')
 const nacionalNoche3 = document.querySelector('.nacional_noche3')
 
+// FECHA
+const fechant = document.querySelector('.fecha_nt')
+const fechann = document.querySelector('.fecha_nn')
+
+
 fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -37,7 +42,10 @@ fetch(url)
                 nacionalTarde3.className = 'active_bowling'
 
             }
-           
+            //FECHA
+            var date_nt = data[0].Sorteos[0].FechaCorta
+            fechant.textContent = date_nt
+
             //NACIONAL NOCHE
             var nn1 = data[0].Sorteos[1].Elemento1;
             var nn2 = data[0].Sorteos[1].Elemento2;
@@ -58,9 +66,10 @@ fetch(url)
                 nacionalNoche2.className = 'active_bowling'
                 nacionalNoche3.className = 'active_bowling'
             }
-           
 
-
+           //FECHA
+           var date_nn = data[0].Sorteos[0].FechaCorta
+           fechant.textContent = date_nn
 
         });
     })

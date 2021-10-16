@@ -61,8 +61,8 @@ let diaDeManana = `${dia + 1} de ${pmes} (${anio})`
 // console.log(diaDeManana)
 // AGREGAR FECHA DE HOY CARDS
 
-for (var i = 0; i < fechaActual.length; i++) {
-    fechaActual[i].textContent = formato1;
-}
+// for (var i = 0; i < fechaActual.length; i++) {
+//     fechaActual[i].textContent = formato1;
+// }
 
 

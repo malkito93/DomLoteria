@@ -143,8 +143,12 @@ fetch (url)
 
         //NOMBRE SORTEO
         var am_sorteo = data[8].Sorteos[0].NombreSorteo;
-        var amSorteo = document.querySelector('.am_sorteo').textContent = am_sorteo;
+        var amSorteo = document.querySelectorAll('.am_sorteo');
+        // .textContent = am_sorteo;
+        amSorteo[0].textContent = am_sorteo;
+        amSorteo[1].textContent = am_sorteo;
 
+        console.log(data)
         var amHoy = data[8].Sorteos[0].Hoy;
 
         if(amHoy === 'S'){
