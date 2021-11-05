@@ -5,6 +5,9 @@ const quinielaPale1 = document.querySelector('.quiniela_pale1')
 const quinielaPale2 = document.querySelector('.quiniela_pale2')
 const quinielaPale3 = document.querySelector('.quiniela_pale3')
 
+//FECHA
+const fechaqp = document.querySelector('.fecha_qp')
+
 fetch(url)
     .then(res => res.json())
     .then(data => {

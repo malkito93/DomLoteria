@@ -20,6 +20,11 @@ const anguillaNoche1 = document.querySelector('.anguilla_noche1')
 const anguillaNoche2 = document.querySelector('.anguilla_noche2')
 const anguillaNoche3 = document.querySelector('.anguilla_noche3')
 
+//FECHA
+const fechaam = document.querySelector('.fecha_am')
+const fechaad = document.querySelector('.fecha_ad')
+const fechaat = document.querySelector('.fecha_at')
+const fechaan = document.querySelector('.fecha_an')
 
 // console.log(quinielaLoteka1)
 fetch(url)

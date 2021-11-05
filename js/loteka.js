@@ -5,6 +5,9 @@ const quinielaLoteka1 = document.getElementById('loteka1')
 const quinielaLoteka2 = document.getElementById('loteka2')
 const quinielaLoteka3 = document.getElementById('loteka3')
 
+//FECHA
+const fechaltk = document.querySelector('.fecha_ltk')
+
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())

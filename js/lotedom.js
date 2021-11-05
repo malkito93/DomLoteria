@@ -10,6 +10,10 @@ const lotedom1 = document.querySelector('.lotedom1')
 const lotedom2 = document.querySelector('.lotedom2')
 const lotedom3 = document.querySelector('.lotedom3')
 
+//FECHA
+const fechalp = document.querySelector('.fecha_lp')
+const fechaldm = document.querySelector('.fecha_ldm')
+
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())

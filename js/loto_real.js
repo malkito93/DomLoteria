@@ -5,6 +5,9 @@ const quinielaReal1 = document.querySelector('.quiniela_real1')
 const quinielaReal2 = document.querySelector('.quiniela_real2')
 const quinielaReal3 = document.querySelector('.quiniela_real3')
 
+//FECHA
+const fechaltk = document.querySelector('.fecha_ltk')
+
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())

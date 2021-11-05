@@ -20,6 +20,12 @@ const floridaNoche1 = document.querySelector('.florida_noche1')
 const floridaNoche2 = document.querySelector('.florida_noche2')
 const floridaNoche3 = document.querySelector('.florida_noche3')
 
+//FECHA
+const fechanyd = document.querySelector('.fecha_nyd')
+const fechanyn = document.querySelector('.fecha_nyn')
+const fechafd = document.querySelector('.fecha_fd')
+const fechafn = document.querySelector('.fecha_fn')
+
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())

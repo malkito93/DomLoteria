@@ -1,6 +1,6 @@
 const url = 'http://173.248.151.142:8025/DomLoteria/api/ResultadosHoy';
 
-// ANGUILLA TARDE
+// NACIONAL TARDE
 const nacionalTarde1 = document.querySelector('.nacional_tarde1')
 const nacionalTarde2 = document.querySelector('.nacional_tarde2')
 const nacionalTarde3 = document.querySelector('.nacional_tarde3')

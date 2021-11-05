@@ -5,6 +5,9 @@ const laSuerte1 = document.querySelector('.la_suerte1')
 const laSuerte2 = document.querySelector('.la_suerte2')
 const laSuerte3 = document.querySelector('.la_suerte3')
 
+//FECHA
+const fechals = document.querySelector('.fecha_ls')
+
 // console.log(quinielaLoteka1)
 fetch(url)
     .then(res => res.json())
