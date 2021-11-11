@@ -13,16 +13,20 @@ fetch(url)
     .then(res => res.json())
     .then(data => {
         data.forEach(loteria => {
-          
+
+          // FECHA
+          var lsfecha= data[2].FechaCorta;
+          fechals.textContent= lsfecha;
+
             // LA SUERTE
-            var ls1 = data[6].Sorteos[0].Elemento1;
-            var ls2 = data[6].Sorteos[0].Elemento2;
-            var ls3 = data[6].Sorteos[0].Elemento3;
+            var ls1 = data[2].Elemento1;
+            var ls2 = data[2].Elemento2;
+            var ls3 = data[2].Elemento3;
 
              //NOMBRE SORTEO
-        var ls_sorteo = data[6].Sorteos[0].NombreSorteo;
+        var ls_sorteo = data[2].NombreSorteo;
         var lsSorteo = document.querySelector('.ls_sorteo').textContent = ls_sorteo;
-            var lsHoy = data[6].Sorteos[0].Hoy;
+            var lsHoy = data[2].Hoy;
             // console.log(lsHoy)
     
             if(lsHoy === 'S'){

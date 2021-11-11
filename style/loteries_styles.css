@@ -578,6 +578,10 @@ header .descargar_app a
         margin-top: 0;
         margin-bottom: 0;
     }
+    .quiniela_name 
+    {
+       font-size:12;
+    }
 }
 /* Historical */
 .historical_results{

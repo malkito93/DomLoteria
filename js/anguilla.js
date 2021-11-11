@@ -32,15 +32,31 @@ fetch(url)
     .then(data => {
         data.forEach(loteria => {
 
-           // ANGUILLA MANANA
-        var am1 = data[8].Sorteos[0].Elemento1;
-        var am2 = data[8].Sorteos[0].Elemento2;
-        var am3 = data[8].Sorteos[0].Elemento3;
+          // FECHAS
+          var amfecha= data[0].FechaCorta;
+          fechaam.textContent= amfecha;
 
-        var amHoy = data[8].Sorteos[0].Hoy;
+          var adfecha= data[3].FechaCorta;
+          fechaad.textContent= adfecha;
+
+          var atfecha= data[9].FechaCorta;
+          fechaat.textContent= atfecha;
+
+          var anfecha= data[13].FechaCorta;
+          fechaan.textContent= anfecha;
+
+           // ANGUILLA MANANA
+        var am1 = data[0].Elemento1;
+        var am2 = data[0].Elemento2;
+        var am3 = data[0].Elemento3;
+
+        var amHoy = data[0].Hoy;
+        
+        
+
 
         //NOMBRE SORTEO
-        var am_sorteo = data[8].Sorteos[0].NombreSorteo;
+        var am_sorteo = data[0].NombreSorteo;
         var amSorteo = document.querySelector('.am_sorteo').textContent = am_sorteo;
 
         if(amHoy === 'S'){
@@ -55,15 +71,15 @@ fetch(url)
         anguillaManana3.textContent = am3
           
            // ANGUILLA DIA
-        var ad1 = data[8].Sorteos[1].Elemento1;
-        var ad2 = data[8].Sorteos[1].Elemento2;
-        var ad3 = data[8].Sorteos[1].Elemento3;
+        var ad1 = data[3].Elemento1;
+        var ad2 = data[3].Elemento2;
+        var ad3 = data[3].Elemento3;
 
         //NOMBRE SORTEO
-        var ad_sorteo = data[8].Sorteos[1].NombreSorteo;
+        var ad_sorteo = data[3].NombreSorteo;
         var adSorteo = document.querySelector('.ad_sorteo').textContent = ad_sorteo;
 
-        var adHoy = data[8].Sorteos[1].Hoy;
+        var adHoy = data[3].Hoy;
  
         if(adHoy === 'S'){
 
@@ -77,15 +93,15 @@ fetch(url)
         anguillaDia3.textContent = ad3
 
           // ANGUILLA TARDE 
-          var at1 = data[8].Sorteos[2].Elemento1;
-          var at2 = data[8].Sorteos[2].Elemento2;
-          var at3 = data[8].Sorteos[2].Elemento3;
+          var at1 = data[9].Elemento1;
+          var at2 = data[9].Elemento2;
+          var at3 = data[9].Elemento3;
     
           //NOMBRE SORTEO
-        var at_sorteo = data[8].Sorteos[2].NombreSorteo;
+        var at_sorteo = data[9].NombreSorteo;
         var atSorteo = document.querySelector('.at_sorteo').textContent = at_sorteo;
 
-          var atHoy = data[8].Sorteos[2].Hoy;
+          var atHoy = data[9].Hoy;
           if(atHoy === 'S'){
   
             anguillaTarde1.className ='active_bowling'
@@ -98,15 +114,15 @@ fetch(url)
           anguillaTarde3.textContent = at3 
 
            // ANGUILLA NOCHE  
-          var an1 = data[8].Sorteos[3].Elemento1;
-          var an2 = data[8].Sorteos[3].Elemento2;
-          var an3 = data[8].Sorteos[3].Elemento3;
+          var an1 = data[14].Elemento1;
+          var an2 = data[14].Elemento2;
+          var an3 = data[14].Elemento3;
 
           //NOMBRE SORTEO
-        var an_sorteo = data[8].Sorteos[3].NombreSorteo;
+        var an_sorteo = data[14].NombreSorteo;
         var anSorteo = document.querySelector('.an_sorteo').textContent = an_sorteo;
         
-          var anHoy = data[8].Sorteos[3].Hoy;
+          var anHoy = data[14].Hoy;
           if(anHoy === 'S'){
   
             anguillaNoche1.className ='active_bowling'

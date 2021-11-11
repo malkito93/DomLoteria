@@ -373,7 +373,7 @@ fetch (url)
         var date_nyd = document.querySelector('.nyd_date').textContent = fecha_nyd;
 
         //NOMBRE LOTERIA
-        var nyd_nombre = data[7].NombreLoteria;
+        var nyd_nombre = data[6].NombreLoteria;
         var nydNombre = document.querySelector('.nyd_name').textContent = nyd_nombre;
 
         //NOMBRE SORTEO

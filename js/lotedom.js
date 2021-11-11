@@ -20,16 +20,23 @@ fetch(url)
     .then(data => {
         data.forEach(loteria => {
 
+          // FECHAS
+          var lpfecha= data[1].FechaCorta;
+          fechalp.textContent= lpfecha
+
+          var ldmfecha= data[8].FechaCorta;
+          fechaldm.textContent= ldmfecha
+
             // LA PRIMERA
-        var lp1 = data[5].Sorteos[0].Elemento1;
-        var lp2 = data[5].Sorteos[0].Elemento2;
-        var lp3 = data[5].Sorteos[0].Elemento3;
+        var lp1 = data[1].Elemento1;
+        var lp2 = data[1].Elemento2;
+        var lp3 = data[1].Elemento3;
 
         //NOMBRE SORTEO
-       var lp_sorteo = data[5].Sorteos[0].NombreSorteo;
+       var lp_sorteo = data[1].NombreSorteo;
        var lpSorteo = document.querySelector('.lp_sorteo').textContent = lp_sorteo;
 
-        var lpHoy = data[5].Sorteos[0].Hoy;
+        var lpHoy = data[1].Hoy;
 
         if(lpHoy === 'S'){
 
@@ -44,15 +51,15 @@ fetch(url)
           
 
            // LOTEDOM 
-          var ld1 = data[5].Sorteos[1].Elemento1;
-          var ld2 = data[5].Sorteos[1].Elemento2;
-          var ld3 = data[5].Sorteos[1].Elemento3;
+          var ld1 = data[8].Elemento1;
+          var ld2 = data[8].Elemento2;
+          var ld3 = data[8].Elemento3;
 
           //NOMBRE SORTEO
-        var ld_sorteo = data[5].Sorteos[1].NombreSorteo;
+        var ld_sorteo = data[8].NombreSorteo;
         var ldSorteo = document.querySelector('.ld_sorteo').textContent = ld_sorteo;
         
-          var ldHoy = data[5].Sorteos[1].Hoy;
+          var ldHoy = data[8].Hoy;
           if(ldHoy === 'S'){
   
             lotedom1.className ='active_bowling'

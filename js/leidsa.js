@@ -13,20 +13,24 @@ fetch(url)
     .then(data => {
         data.forEach(loteria => {
 
+            // FECHAS
+          var qpfecha= data[12].FechaCorta;
+          fechaqp.textContent= qpfecha;
+
             //QUINIELA PALE
-        var qp1 = data[1].Sorteos[0].Elemento1;
-        var qp2 = data[1].Sorteos[0].Elemento2;
-        var qp3 = data[1].Sorteos[0].Elemento3;
+        var qp1 = data[12].Elemento1;
+        var qp2 = data[12].Elemento2;
+        var qp3 = data[12].Elemento3;
       
         //NOMBRE SORTEO
-        var qp_sorteo = data[1].Sorteos[0].NombreSorteo;
+        var qp_sorteo = data[12].NombreSorteo;
         var amSorteo = document.querySelector('.qp_sorteo').textContent = qp_sorteo;
         
         quinielaPale1.textContent = qp1
         quinielaPale2.textContent = qp2
         quinielaPale3.textContent = qp3
 
-        var qpHoy = data[1].Sorteos[0].Hoy;
+        var qpHoy = data[12].Hoy;
 
         if( qpHoy === 'S'){
 
