@@ -88,6 +88,7 @@ fetch (url)
 .then(data => {
     data.forEach(loteiria =>{
 
+      console.log(data)
         //QUINIELA PALE
         var qp1 = data[12].Elemento1;
         var qp2 = data[12].Elemento2;
@@ -553,23 +554,23 @@ fetch (url)
               
          
           // LOTEKA 
-          var qlk1 = data[2].Elemento1;
-          var qlk2 = data[2].Elemento2;
-          var qlk3 = data[2].Elemento3;
+          var qlk1 = data[11].Elemento1;
+          var qlk2 = data[11].Elemento2;
+          var qlk3 = data[11].Elemento3;
           
            //FECHA
-        var fecha_ltk = data[2].Fecha;
+        var fecha_ltk = data[11].Fecha;
         var date_ltk = document.querySelector('.ltk_date').textContent = fecha_ltk;
 
         //NOMBRE LOTERIA
-        var ltk_nombre = data[2].NombreLoteria;
+        var ltk_nombre = data[11].NombreLoteria;
         var ltkNombre = document.querySelector('.ltk_name').textContent = ltk_nombre;
 
         //NOMBRE SORTEO
-        var ltk_sorteo = data[2].NombreSorteo;
+        var ltk_sorteo = data[11].NombreSorteo;
         var ltkSorteo = document.querySelector('.ltk_sorteo').textContent = ltk_sorteo;
 
-          var qlkHoy = data[2].Hoy;
+          var qlkHoy = data[11].Hoy;
           if(qlkHoy === 'S'){
   
             quinielaLoteka1[0].className ='active_bowling'
@@ -590,23 +591,23 @@ fetch (url)
           quinielaLoteka3[1].textContent = qlk3 
           
           // ANGUILLA NOCHE  
-          var an1 = data[8].Elemento1;
-          var an2 = data[8].Elemento2;
-          var an3 = data[8].Elemento3;
+          var an1 = data[13].Elemento1;
+          var an2 = data[13].Elemento2;
+          var an3 = data[13].Elemento3;
           
         //FECHA
-        var fecha_an = data[8].Fecha;
+        var fecha_an = data[13].Fecha;
         var date_an = document.querySelector('.an_date').textContent = fecha_an;
 
         //NOMBRE LOTERIA
-        var an_nombre = data[8].NombreLoteria;
+        var an_nombre = data[13].NombreLoteria;
         var anNombre = document.querySelector('.an_name').textContent = an_nombre;
 
         //NOMBRE SORTEO
-        var an_sorteo = data[8].NombreSorteo;
+        var an_sorteo = data[13].NombreSorteo;
         var anSorteo = document.querySelector('.an_sorteo').textContent = an_sorteo;
 
-          var anHoy = data[8].Hoy;
+          var anHoy = data[13].Hoy;
           if(anHoy === 'S'){
   
             anguillaNoche1[0].className ='active_bowling'
@@ -628,23 +629,23 @@ fetch (url)
               
          
           // FLORIDA NOCHE
-          var fn1 = data[7].Elemento1;
-          var fn2 = data[7].Elemento2;
-          var fn3 = data[7].Elemento3;
+          var fn1 = data[14].Elemento1;
+          var fn2 = data[14].Elemento2;
+          var fn3 = data[14].Elemento3;
   
           //FECHA
-        var fecha_fn = data[7].Fecha;
+        var fecha_fn = data[14].Fecha;
         var date_fn = document.querySelector('.fn_date').textContent = fecha_fn;
 
         //NOMBRE LOTERIA
-        var fn_nombre = data[7].NombreLoteria;
+        var fn_nombre = data[14].NombreLoteria;
         var fnNombre = document.querySelector('.fn_name').textContent = fn_nombre;
 
         //NOMBRE SORTEO
-        var fn_sorteo = data[7].NombreSorteo;
+        var fn_sorteo = data[14].NombreSorteo;
         var fnSorteo = document.querySelector('.fn_sorteo').textContent = fn_sorteo;
 
-          var fnHoy = data[7].Hoy;
+          var fnHoy = data[14].Hoy;
           if(fnHoy === 'S'){
   
             floridaNoche1[0].className ='active_bowling'
@@ -665,23 +666,23 @@ fetch (url)
           floridaNoche3[1].textContent = fn3 
               
           // NEW YORK NOCHE 
-          var nyn1 = data[7].Elemento1;
-          var nyn2 = data[7].Elemento2;
-          var nyn3 = data[7].Elemento3;
+          var nyn1 = data[15].Elemento1;
+          var nyn2 = data[15].Elemento2;
+          var nyn3 = data[15].Elemento3;
           
             //FECHA
-        var fecha_nyn = data[7].Fecha;
+        var fecha_nyn = data[15].Fecha;
         var date_nyn = document.querySelector('.nyn_date').textContent = fecha_nyn;
 
         //NOMBRE LOTERIA
-        var nyn_nombre = data[7].NombreLoteria;
+        var nyn_nombre = data[15].NombreLoteria;
         var nynNombre = document.querySelector('.nyn_name').textContent = nyn_nombre;
 
         //NOMBRE SORTEO
-        var nyn_sorteo = data[7].NombreSorteo;
+        var nyn_sorteo = data[15].NombreSorteo;
         var nynSorteo = document.querySelector('.nyn_sorteo').textContent = nyn_sorteo;
 
-          var nynHoy = data[7].Hoy;
+          var nynHoy = data[15].Hoy;
           if(nynHoy === 'S'){
   
             newYorkNoche1[0].className ='active_bowling'
